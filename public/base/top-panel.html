@@ -1,7 +1,7 @@
-<div class="loader" style="display: none;">
+<div class="loader">
     <div class="rotate-loader"></div>
 </div>
-<div class="container-fluid login-panel" id="login-panel" style="display: none;">
+<div class="container-fluid login-panel" id="login-panel">
     <a class="glyphicon glyphicon-remove remove-bt" id="remove-login"></a>
     <div class="row">
         <div class="col-md-5 login-info">
@@ -84,7 +84,7 @@
     /* Login panel */
     $("#remove-login").click(function () {
         $("#login-panel").slideUp(500);
-        $("#login-sign").removeClass("header-login");
+        $("#login-sign").removeClass("js-header-login");
         return false;
     });
     /* Lost password */
@@ -118,11 +118,11 @@
         $(".pop-wrap").remove();
     });
 
-//    $(window).load(function() {
-//        /* Loader */
-//        jQuery(".loader").fadeOut(500);
-//
-//        /* Login panel slideup */
-//        $("#login-panel").slideUp(500);
-//    });
+    $(window).load(function() {
+        /* Loader */
+        jQuery(".loader").fadeOut(500);
+
+        /* Login panel slideup */
+        $("#login-panel").slideUp(500);
+    });
 </script>

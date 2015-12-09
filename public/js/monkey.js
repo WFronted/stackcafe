@@ -71,14 +71,20 @@ $(" .pop-wrap").click(function(){
 });
 
 /* NiceScroll */
-$("html").niceScroll({
-    scrollspeed: 90,
-    mousescrollstep: 56,
-    cursorwidth: 6,
-    cursorborder: 0,
-    cursorcolor: '#bdc3c7',
-    autohidemode: false,
-    zindex: 9999999,
-    horizrailenabled: false,
-    cursorborderradius: 6
-})
+$(document).ready(
+    function() {
+        $("html").niceScroll({
+            scrollspeed: 90,
+            mousescrollstep: 56,
+            cursorwidth: 6,
+            cursorborder: 0,
+            cursorcolor: '#bdc3c7',
+            autohidemode: false,
+            zindex: 9999999,
+            horizrailenabled: false,
+            cursorborderradius: 6
+        })
+    }
+);
+
+
