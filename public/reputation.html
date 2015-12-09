@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, maximum-scale=1, user-scalable=no"/>
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/cafe.css" rel="stylesheet" />
+    <link href="css/responsive-reset.css" rel="stylesheet"/>
+</head>
+<body>
+<section class="global-navbar" id="js-nav"></section>
+<!--<section class="showcase common-showcase" id="js-showcase"></section>-->
+<div class="canvas-wrap">
+    <p class="canvas-block" id="particles-js"></p>
+    <div class="showcase-2">
+        <h1>Stackcafe</h1>
+        <h3>所有成员都能参与管理的开放程序员社区，在这里我们相互学习，共同进步！</h3>
+    </div>
+    <div class="relevant-nav">
+        <div class="container">
+            <ul class="relevant-nav-w">
+                <li><a href="#">REPUTATION</a></li>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">markdown语法</a></li>
+                <li><a href="#">友情链接</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section class="cafe-con">
+    <div class="container">
+        <div class="row cafe-row clearfix">
+            <div class="col-sm-12 con-main">
+                <div class="con-wrap reputation-wrap">
+                    <section>
+                        <div class="reputation-intro">
+                            <h2 class="reputation-t">REPUTATION</h2>
+                            <h4>
+                                REPUTATION是Stackcafe社区的声望值，它从一定程度上反映了社区成员对社区的贡献；成员的REPUTATION越高，TA拥有的权限也会越高；REPUTATION的获取是有一定的规则的，具体参见下文 ↓↓
+                            </h4>
+                        </div>
+                        <ul class="reputation-rule up-raputation clearfix">
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>+1</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        创建/回答一个问题
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>+1</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        问题被别人回答
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>+2</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        采纳别人的答案
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>+2</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        问题被关注
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>文章</i>
+                                <b>+2</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        发布一篇文章
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>+8</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        问题被投赞同票
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>文章</i>
+                                <b>+8</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        文章被关注
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>+12</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        回答被投赞同票
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>文章</i>
+                                <b>+12</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        文章被投推荐票
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>+20</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        回答被采纳
+                                    </span>
+                            </li>
+                        </ul>
+                        <ul class="reputation-rule down-raputation clearfix">
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>-1</b>
+                                <span>
+                                    <strong class="glyphicon glyphicon-star"></strong>
+                                    反对他人问题/答案
+                                </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>-2</b>
+                                <span>
+                                    <strong class="glyphicon glyphicon-star"></strong>
+                                    问题/回答被投反对票
+                                </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>-5</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        问题被他人/自己删除
+                                    </span>
+                            </li>
+                            <li class="clearfix">
+                                <i>问答</i>
+                                <b>-8</b>
+                                    <span>
+                                        <strong class="glyphicon glyphicon-star"></strong>
+                                        回答被他人/自己删除
+                                    </span>
+                            </li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="reputation-intro">
+                            <h2 class="reputation-t">徽章与权限</h2>
+                            <h4>
+                                徽章与权限是相互关联的，徽章的级别越高，对应的权限越高；不同级别的徽章又是由REPUTATION来决定的，REPUTATION越大，徽章级别越高；徽章与权限的对应关系详见如下 ↓↓
+                            </h4>
+                        </div>
+                        <div class="col-md-12 reputation-amd clearfix">
+                            <div class="amd-user col-md-3">
+                                <span class="user-badge badge-administrator">Administrator</span>
+                                <p class="reputation-author">
+                                    社区的开发者与维护者
+                                </p>
+                            </div>
+                            <div class="you-can col-md-9">
+                                <p class="power-t">权限：</p>
+                                <p class="admin-right">Administrator是Stackcafe社区的管理员和运营者，对社区的一些日常事务进行管理和监督，对社区中一些违规、侵权、涉及隐私等问题、文章进行关闭或删除，对违反规定的社区成员进行封号等；同时Administrator也是本社区的服务者、开发者和维护者，社区成员有任何问题和建议，都可以和他沟通联系，帮助大家改善社区体验；所有成员都必须遵守社区的服务条款和使用规则。</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 reputation-amd clearfix">
+                            <div class="amd-user col-md-3">
+                                <span class="user-badge badge-d-admin">D-Admin</span>
+                                <p class="reputation-author">
+                                    需要授权获得
+                                </p>
+                            </div>
+                            <div class="you-can col-md-9">
+                                <p class="power-t">权限：</p>
+                                <p class="admin-right">D-Admin是由Administrator授权并参与社区开发与维护的社区成员，和Administrator一起负责社区的运营、推广，解决社区在发展途中遇到的一些技术问题（前端、后端、SEO等）；它要求社区成员的REPUTATION值必须达到Genius级别，并在社区中回答问题320次以上，并且有超过51%的回答被问题提出者采纳或者回答中有超过60%次的回答被投过赞同票，原创文章5篇或以上，熟悉开发相关的知识，热爱社区，服务意识强，有责任心；只要是社区成员，并达到上述要求，都可跟Administrator联系，申请成为D-Admin一员。</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-master">Master</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 26K</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>删除问题</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>删除答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑标签</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-professor">Professor</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 18K</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑标签</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-v-professor">V-Professor</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 11K</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑标签</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-genius">Genius</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 5.7K</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>编辑标签</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-faithful">Faithful</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 1.9K</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除答案</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑标签</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-supporter">Supporter</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 664</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>给问题投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除答案</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑标签</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-tourist">Tourist</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 180</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>给问题投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除答案</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑标签</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 reputation-amd clearfix">
+                            <div class="amd-user col-sm-3">
+                                <span class="user-badge badge-member">Member</span>
+                                <p class="reputation-require">
+                                    <b class="reputation-states">&gt; 10</b>
+                                        <span>
+                                            <strong class="glyphicon glyphicon-star"></strong>
+                                        REPUTATION要求
+                                        </span>
+                                </p>
+                            </div>
+                            <div class="you-can col-sm-3">
+                                <p class="power-t">权限：</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>给问题投反对票</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>给问题投赞成票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给文章投推荐票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑别人的答案</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>给答案投反对票</p>
+                                <p class="power-c power-c-y"><i class="glyphicon glyphicon-ok"></i>给答案投赞成票</p>
+                            </div>
+                            <div class="you-can you-can-2 col-sm-3">
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除问题</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>删除答案</p>
+                                <p class="power-c power-c-n"><i class="glyphicon glyphicon-ban-circle"></i>编辑标签</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="js-footer"></footer>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/monkey.js"></script>
+<script src="js/canvas-app.js"></script>
+</body>
+</html>

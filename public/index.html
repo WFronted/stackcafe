@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, maximum-scale=1, user-scalable=no"/>
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/cafe.css" rel="stylesheet" />
+    <link href="css/responsive-reset.css" rel="stylesheet"/>
+</head>
+<body>
+    <section>
+        <div class="container-fluid login-panel">
+            <div class="row">
+                <div class="col-md-5 login-info">
+                    <p class="login-t">欢迎登陆STACKCAFE</p>
+                    <form class="login-panel-form">
+                        <p class="login-input">
+                            <input class="required-item" type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
+                            <i class="glyphicon glyphicon-user"></i>
+                        </p>
+                        <p class="login-input">
+                            <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
+                            <i class="glyphicon glyphicon-lock"></i>
+                            <a href="#">忘记密码</a>
+                        </p>
+                        <button type="submit" class="login-bt">登录</button>
+                        <div class="rememberme clearfix">
+                            <label>
+                                <input type="checkbox" input="" name="rememberme" checked="checked" /> 保存登陆状态
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-md-push-1 sign-up-bt">
+                    <h3>StackCafe是面向开发者的社区，它是一个开放的平台，在这里您可以学习、提问、写文章，并不断获得进步！如果您也是一名开发者，或者对开发充满兴趣，非常欢迎您的加入！</h3>
+                    <a href="#">立即注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid sign-panel">
+            <div class="row">
+                <div class="col-md-6 col-md-push-3 sign-wrap">
+                    <p class="sign-t">注册账号</p>
+                    <form class="sign-panel-form">
+                        <lable class="sign-up-input">
+                            <span>* 用户名:</span>
+                            <input type="text" value="字母、数字或者两者组合" onfocus="if (this.value == '字母、数字或者两者组合') {this.value = '';}" onblur="if (this.value == '') {this.value = '字母、数字或者两者组合';}" name="log" />
+                        </lable>
+                        <lable class="sign-up-input">
+                            <span>* Email:</span>
+                            <input type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
+                        </lable>
+                        <lable class="sign-up-input">
+                            <span>* 密码:</span>
+                            <input type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="password" />
+                        </lable>
+                        <lable class="sign-up-input">
+                            <span>* 确认密码:</span>
+                            <input type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="password" />
+                        </lable>
+                        <p class="sign-submit">
+                            <span>同意并接受《<a href="#">服务条款</a>》</span>
+                            <button type="submit">注册</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="global-navbar" id="js-nav"></section>
+    <section class="container-fluid showcase" id="js-indexShowcase"></section>
+    <section class="cafe-con">
+        <div class="container">
+            <div class="row cafe-row clearfix">
+                <div class="col-md-9 con-main">
+                    <div class="con-wrap">
+                        <div class="classify clearfix">
+                            <p class="pull-left active"><a href="index.html" title="question">问答</a></p>
+                            <p class="pull-left"><a href="articles.html" title="article">文章</a></p>
+                        </div>
+                        <article class="list-con">
+                            <div class="list-item clearfix">
+                                <p class="answer-counts pull-left"><b>101</b><span>回答</span></p>
+                                <p class="vote-view-counts pull-right">
+                                    <span><b>20</b><i>投票</i></span>
+                                    <span><b>2000</b><i>浏览</i></span>
+                                </p>
+                                <div class="list-item-main">
+                                    <h2><a href="#" title="question title">phpcms V9 下载模型，内容页生成静态以后阅读点数和元判断失效</a></h2>
+                                    <small>在js代码中嵌入markdow编辑器，但是代码不能高亮，应该如何去解决呢，求高手解答</small>
+                                    <p class="user-info">
+                                        <img src="img/user-pic.jpg" />
+                                        <span><a href="#" title="user name">wfronted</a><em class="user-badge badge-professor">Professor</em><i>242 REPUTATION</i></span>
+                                        <strong>提问于<b>5小时前</b></strong>
+                                    </p>
+                                    <p class="tags-name">
+                                        <a href="#" title="tags name">javascript</a>
+                                        <a href="#" title="tags name">php</a>
+                                        <a href="#" title="tags name">html</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="list-item clearfix">
+                                <p class="answer-counts pull-left"><b>101</b><span>回答</span></p>
+                                <p class="vote-view-counts pull-right">
+                                    <span><b>20</b><i>投票</i></span>
+                                    <span><b>20</b><i>浏览</i></span>
+                                </p>
+                                <div class="list-item-main">
+                                    <h2><a href="#" title="question title">phpcms V9 下载模型，内容页生成静态以后阅读点数和元判断失效</a></h2>
+                                    <p class="user-info">
+                                        <img src="img/user-pic.jpg" />
+                                        <span><a href="#" title="user name">wfronted</a><em class="user-badge badge-professor">Professor</em><i>242 REPUTATION</i></span>
+                                        <strong>提问于<b>5小时前</b></strong>
+                                    </p>
+                                    <p class="tags-name">
+                                        <a href="#" title="tags name">javascript</a>
+                                        <a href="#" title="tags name">php</a>
+                                        <a href="#" title="tags name">html</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="list-item clearfix">
+                                <p class="answer-counts pull-left"><b>101</b><span>回答</span></p>
+                                <p class="vote-view-counts pull-right">
+                                    <span><b>20</b><i>投票</i></span>
+                                    <span><b>20</b><i>浏览</i></span>
+                                </p>
+                                <div class="list-item-main">
+                                    <h2><a href="#" title="question title">phpcms V9 下载模型，内容页生成静态以后阅读点数和元判断失效</a></h2>
+                                    <p class="user-info">
+                                        <img src="img/user-pic.jpg" />
+                                        <span><a href="#" title="user name">wfronted</a><em class="user-badge badge-professor">Professor</em><i>242 REPUTATION</i></span>
+                                        <strong>提问于<b>5小时前</b></strong>
+                                    </p>
+                                    <p class="tags-name">
+                                        <a href="#" title="tags name">javascript</a>
+                                        <a href="#" title="tags name">php</a>
+                                        <a href="#" title="tags name">html</a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </article>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <article class="col-md-3 col-xs-12 con-main">
+                    <!--<div class="right-bar">-->
+                        <!--<div class="ask-question-bt">-->
+                            <!--<a href="#"><span class="glyphicon glyphicon-plus"></span>问个问题</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="right-bar">
+                        <div class="widget-user">
+                            <ul class="user-f">
+                                <li class="clearfix">
+                                    <img class="user-f-t" src="img/user-pic.jpg" />
+                                    <p class="user-f-n clearfix">
+                                        <a href="#">WFronted</a>
+                                        <span class="user-f-g user-badge badge-professor">Professor</span>
+                                        <span class="user-f-r"><b>275</b>REPUTATION</span>
+                                    </p>
+                                </li>
+                                <li class="user-f-i clearfix">
+                                    <p><b>234</b><span>回答</span></p>
+                                    <p><b>234</b><span>问题</span></p>
+                                    <p><b>234</b><span>文章</span></p>
+                                    <p><b>234</b><span>被关注</span></p>
+                                </li>
+                                <li class="user-f-b ask-question-bt">
+                                    <a href="#"><span class="glyphicon glyphicon-plus"></span>问个问题</a>
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span>写篇文章/笔记</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-bar">
+                        <div class="widget-login">
+                            <form class="login-form">
+                                <p class="login-input">
+                                    <input class="required-item" type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
+                                    <i class="glyphicon glyphicon-user"></i>
+                                </p>
+                                <p class="login-input">
+                                    <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
+                                    <i class="glyphicon glyphicon-lock"></i>
+                                    <a href="#">忘记</a>
+                                </p>
+                                <p class="login-submit">
+                                    <span class="loader_2" style="display: none;"></span>
+                                    <input type="submit" value="登录" class="login-button" />
+                                </p>
+                                <div class="rememberme clearfix">
+                                    <label class="pull-left">
+                                        <input type="checkbox" input="" name="rememberme" checked="checked" /> 保存登陆状态
+                                    </label>
+                                    <a class="pull-right" href="#">注册会员</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!--<div class="right-bar">-->
+                        <!--<div class="widget-welcome">-->
+                            <!--<h2>欢迎访问stackcafe社区，您在开发中遇到任何问题，都可以在此提出，让我们一起来解决！</h2>-->
+                            <!--<a href="#">问个问题</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <div class="right-bar">
+                        <div class="widget-box">
+                            <div class="clearfix">
+                                <h2 class="widget-box-title pull-left">雷锋榜</h2>
+                                <p class="sort-t pull-right clearfix">
+                                    <a class="active" href="#">默认</a>
+                                    <a href="#">今日</a>
+                                </p>
+                            </div>
+                            <div class="widget-box-con">
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">1</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">2</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">3</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">4</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="widget-box">
+                            <div class="clearfix">
+                                <h2 class="widget-box-title pull-left">排行榜</h2>
+                                <p class="sort-t pull-right clearfix">
+                                    <a class="active" href="#">默认</a>
+                                    <a href="#">今日</a>
+                                </p>
+                            </div>
+                            <div class="widget-box-con">
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">1</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts exp-counts"><b>2685</b>REPUTATION</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">2</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts exp-counts"><b>618</b>REPUTATION</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">3</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts exp-counts"><b>28</b>REPUTATION</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">4</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts exp-counts"><b>8</b>REPUTATION</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">5</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts exp-counts"><b>26.8K</b>REPUTATION</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="widget-box">
+                            <div class="clearfix">
+                                <h2 class="widget-box-title pull-left">热门标签</h2>
+                                <p class="sort-t tags-all-bt pull-right clearfix">
+                                    <a href="#">全部</a>
+                                </p>
+                            </div>
+                            <div class="widget-box-con">
+                                <ul class="tags-list clearfix">
+                                    <li class="tags-name"><a href="#">javascript</a></li>
+                                    <li class="tags-name"><a href="#">html</a></li>
+                                    <li class="tags-name"><a href="#">php</a></li>
+                                    <li class="tags-name"><a href="#">css</a></li>
+                                    <li class="tags-name"><a href="#">java</a></li>
+                                    <li class="tags-name"><a href="#">c#</a></li>
+                                    <li class="tags-name"><a href="#">c++</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <footer id="js-footer"></footer>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/monkey.js"></script>
+</body>
+</html>

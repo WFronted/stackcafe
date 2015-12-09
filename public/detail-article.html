@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, maximum-scale=1, user-scalable=no"/>
+    <title></title>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/cafe.css" rel="stylesheet" />
+    <link href="css/responsive-reset.css" rel="stylesheet"/>
+</head>
+<body>
+<section class="global-navbar" id="js-nav"></section>
+<section class="showcase common-showcase" id="js-showcase"></section>
+    <section class="cafe-con">
+        <div class="container">
+            <div class="row cafe-row clearfix">
+                <!--<div class="col-md-12 question-title-wrap">-->
+                    <!--<div class="col-md-9 con-main question-title">-->
+                        <!--<h2>phpcms V9 下载模型，内容页生成静态以后阅读点数和元判静态以后阅效？</h2>-->
+                    <!--</div>-->
+                    <!--<div class="col-md-3 col-xs-12 con-main">-->
+                        <!--<div class="question-states">-->
+                            <!--<p>关注：230</p>-->
+                            <!--<p>浏览：230</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<br>-->
+                    <!--<br>-->
+                <!--</div>-->
+                <div class="col-md-9 con-main">
+                    <div class="con-wrap">
+                        <div class="article-t clearfix">
+                            <p class="add-rec">
+                                <button class="up glyphicon glyphicon-triangle-top"></button>
+                                <span>242</span>
+                                <b>推荐</b>
+                            </p>
+                            <div class="article-user">
+                                <h2 class="article-t-con">Express在生产环境践 - 性能和可靠性生产环境下的最佳</h2>
+                                <ul class="article-user-info clearfix">
+                                    <li><img src="img/user-pic.jpg" /></li>
+                                    <li><a href="#">WFronted</a></li>
+                                    <li><i>200 REPUTATION</i></li>
+                                    <li><span>发布于 5小时前</span></li>
+                                    <li><b class="user-badge badge-genius">genius</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="detail-a-con">
+                            <div class="article-counts clearfix">
+                                <p class="tags-name pull-left"><a href="#">java</a><a href="#">javascript</a><a href="#">php</a></p>
+                                <p class="q-focus article-fa pull-right">
+                                    <span>22 个评论</span>
+                                    <span>1589 次浏览</span>
+                                    <span>22 次收藏</span>
+                                    <a href="#">收藏</a>
+                                </p>
+                            </div>
+                            <div class="article-body">
+                                赋值很容易,我们就用最简单的办法,直接设置.
+
+                                如果是取值,那我们就要做个判断,因为window,和document的取法是不一样的.
+
+                                还有一种可能性是,当dom元素的display为none的时候,直接取是取不到的.在这我就不做处理了.大家思考一下可以自己尝试.
+
+                                思路是把dom设置为position:absolute;visible:hidden;然后取,在设置回去.
+
+                                同理height方法也是如此.我就直接给出代码了
+
+                                height : function(h) {
+                                if(arguments.length == 1) {
+                                for (var i = 0; i < this.length; i++) {
+                                this[i].style.height = h + 'px';
+                                }
+                                } else {
+                                if(this[0].document === doc ) {
+                                return this[0].innerHeight;
+                                } else if (this[0].nodeType === 9 ){
+                                return document.documentElement.clientHeight;
+                                } else {
+                                return parseInt(getComputedStyle(this[0],null)['height']);
+                                }
+                                }
+                                }
+                                两者几乎相同只是改了API,其实完全可以封装为一个方法复用.
+
+                                jQuery之所以那么广受大众所爱,还一个非常重要的就是他的extend方法.如果没有了他,将不会有现在那么多jQuery插件的诞生
+
+                                在此,我们就实现一个非常简单的浅拷贝.(然而jQuery的extend非常强大)
+
+                                Kodo.prototype.extend = Kodo.extend = function() {
+                                var options = arguments[0];
+                                for( var i in options) {
+                                this[i] = options[i];
+                                }
+                                };
+                                这个方法我们不仅要能拓展静态方法,也要能拓展实例方法.
+
+                                所以 Kodo.prototype.extend = Kodo.extend = 直接这样写了.
+
+                                里面内容过于简陋就不过多讲解了 :)
+
+                                然后我们就能这样拓展我们的插件了
+
+                                f.prototype.extend({  //实例方法
+                                alert : function(msg) {
+                                alert(msg)
+                                }
+                                });
+                                f.extend({ //静态方法
+                                alert : function(msg) {
+                                alert(msg)
+                                }
+                                });
+
+                                f.alert('123');//调用
+                                f("div").alert('123');//调用
+                                其实jQuery还有很多别的部分,比如队列,动画,异步.都是一些非常值得自己去实践尝试的.
+
+                                但至此,我们的小轮子基本也就完结了
+
+                                另外的手势番外篇,本想直接集成在这里面.如果有大众所需,我就继续更下去
+
+                                您连11节的课程都有耐心看完,何必不顺手点下右上角的star呢? >.<
+
+                                github地址: https://github.com/MeCKodo/forchange/tree/master/lessonn-11
+                                可想实现一个自己的简单jQuery库？(十)：http://segmentfault.com/a/1190000004028806
+                            </div>
+                            <div class="discus-list">
+                                <p class="discus-list-title">讨论区</p>
+                                <div class="comment-con clearfix">
+                                    <p class="comment-list clearfix">
+                                        <strong>#1</strong>
+                                        <span>
+                                            这个问题真是好啊，我也想收藏这个问题，我要推荐这个问题。
+                                            -&nbsp;<a href="#">wfronted</a>
+                                            <b href="#">2分钟前</b>
+                                        </span>
+                                    </p>
+                                    <p class="comment-list clearfix">
+                                        <strong>#2</strong>
+                                        <span>
+                                            问题真是好啊，我也想收藏这个问题，我要推荐这个问题问题真是好啊，我也想收藏这个问题，我要推荐这个问题问题真是好啊，我也想收藏这个问题，我要推荐这个问题这个问题真是好啊，我也想收藏这个问题，我要推荐这个问题。
+                                            -&nbsp;<a href="#">wfronted</a>
+                                            <b href="#">2分钟前</b>
+                                        </span>
+
+                                    </p>
+                                    <p class="comment-list clearfix">
+                                        <strong>#2</strong>
+                                        <span>
+                                            <em>@jellybool</em>问题真是好啊，我也想收藏这个问题，我要推荐这个问题问题真是好啊，我也想收藏这个问题，我要推荐这个问题问题真是好啊，我也想收藏这个问题，我要推荐这个问题这个问题真是好啊，我也想收藏这个问题，我要推荐这个问题。
+                                            -&nbsp;<a href="#">wfronted</a>
+                                            <b href="#">2分钟前</b>
+                                        </span>
+
+                                    </p>
+                                    <a class="add-comment article-comment pull-right" href="javascript:;">添加评论</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <article class="col-md-3 col-xs-12 con-main">
+                    <div class="right-bar">
+                        <div class="ask-question-bt">
+                            <a href="#"><span class="glyphicon glyphicon-plus"></span>问个问题</a>
+                        </div>
+                    </div>
+                    <div class="right-bar">
+                        <div class="widget-box">
+                            <h2 class="widget-box-title">最近热门</h2>
+                            <div class="widget-box-con">
+                                <div class="hottest-item">
+                                    <img class="" src="img/user-pic.jpg" />
+                                    <ul class="hottest-list">
+                                        <li><a href="#">为什么老报这个JavaScript我就是想不通，我明明有定义，错没有定义！</a></li>
+                                        <li><span>23</span>个回答<b class="solve-no">未解决</b></li>
+                                    </ul>
+                                </div>
+                                <div class="hottest-item">
+                                    <img class="" src="img/user-pic.jpg" />
+                                    <ul class="hottest-list">
+                                        <li><a href="#">这个JavaScrip明明有定义，为什么老没有定义！</a></li>
+                                        <li><span>14</span>个回答<b class="solve-yes">已解决</b></li>
+                                    </ul>
+                                </div>
+                                <div class="hottest-item">
+                                    <img class="" src="img/user-pic.jpg" />
+                                    <ul class="hottest-list">
+                                        <li><a href="#">avaScri这个JavaScrip明明有定义，Jpt我就是想不为明有定义，为定义明有定义，为！</a></li>
+                                        <li><span>14</span>个回答<b class="solve-yes">已解决</b></li>
+                                    </ul>
+                                </div>
+                                <div class="hottest-item">
+                                    <img class="" src="img/user-pic.jpg" />
+                                    <ul class="hottest-list">
+                                        <li><a href="#">我明明有定义这个JavaScript我就是想不通为什么老报错没有定义！</a></li>
+                                        <li><span>16</span>个回答<b class="solve-no">未解决</b></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="widget-box">
+                            <div class="clearfix">
+                                <h2 class="widget-box-title pull-left">雷锋榜</h2>
+                                <p class="sort-t pull-right clearfix">
+                                    <a class="active" href="#">默认</a>
+                                    <a href="#">今日</a>
+                                </p>
+                            </div>
+                            <div class="widget-box-con">
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">1</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">2</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">3</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                                <table>
+                                    <tr>
+                                        <td class="rank-list">4</td>
+                                        <td class="user-pic"><img src="img/user-pic.jpg" /></td>
+                                        <td class="user-name">
+                                            <a href="#">jellyref way</a>
+                                            <p class="counts"><b>268</b>个回答</p>
+                                        </td>
+                                        <td class="follow"><a href="javascript:;">关注</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="widget-box">
+                            <div class="clearfix">
+                                <h2 class="widget-box-title pull-left">热门标签</h2>
+                                <p class="sort-t tags-all-bt pull-right clearfix">
+                                    <a href="#">全部</a>
+                                </p>
+                            </div>
+                            <div class="widget-box-con">
+                                <ul class="tags-list">
+                                    <li class="tags-name"><a href="#">javascript</a></li>
+                                    <li class="tags-name"><a href="#">html</a></li>
+                                    <li class="tags-name"><a href="#">php</a></li>
+                                    <li class="tags-name"><a href="#">css</a></li>
+                                    <li class="tags-name"><a href="#">java</a></li>
+                                    <li class="tags-name"><a href="#">c#</a></li>
+                                    <li class="tags-name"><a href="#">c++</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                        <br/>
+                </article>
+            </div>
+        </div>
+    </section>
+<footer id="js-footer"></footer>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/monkey.js"></script>
+</body>
+</html>

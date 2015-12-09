@@ -1,0 +1,46 @@
+<h1 class="showcase-title">{互助/协作/进步} 一个属于开发者的问答平台</h1>
+<div class="row showcase-item">
+    <div class="col-wrap col-sm-8 col-sm-push-2">
+        <p class="col-sm-4">
+            <span class="glyphicon glyphicon-pencil"></span>
+                    <span>
+                        <b>Questions</b>
+                        <i>有问题我们一起解决</i>
+                    </span>
+        </p>
+        <p class="col-sm-4">
+            <span class="glyphicon glyphicon-comment"></span>
+                    <span class="showcase-item">
+                        <b>Answers</b>
+                        <i>让我们一起分享您的答案</i>
+                    </span>
+        </p>
+        <p class="col-sm-4">
+            <span class="glyphicon glyphicon-user"></span>
+                    <span class="showcase-item">
+                        <b>Join-us</b>
+                        <i>加入我们共同进步</i>
+                    </span>
+        </p>
+    </div>
+</div>
+<div class="row showcase-search">
+    <form class="col-sm-8 col-sm-push-2 search-form" role="search" >
+        <lable class="showcase-l js-lable">
+            <input type="text" class="search-input js-search" placeholder="搜索一下，其实很简单">
+            <button type="submit" class="search-button glyphicon glyphicon-search"></button>
+        </lable>
+    </form>
+</div>
+
+<script>
+    var lableTextWidth;
+    $('.js-search').focus(function(){
+        var parent=$(this).parent();
+        lableTextWidth=$(parent).css('width');
+        $('.js-lable').animate({width:"100%"},500);
+    });
+    $('.js-search').blur(function(){
+        $('.js-lable').animate({width:lableTextWidth},500);
+    });
+</script>

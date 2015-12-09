@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row common-item clearfix">
+        <h2 class="col-sm-8 showcase-t">当前页面位置</h2>
+        <div class="col-sm-4 common-search">
+            <form class="col-sm-12 search-form">
+                <lable class="common-search-l js-lable">
+                    <button class="search-submit glyphicon glyphicon-search"></button>
+                    <input class="col-sm-12 search-text js-search" placeholder="搜索一下，其实很简单" />
+                </lable>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    var lableTextWidth;
+    $('.js-search').focus(function(){
+        var parent=$(this).parent();
+        lableTextWidth=$(parent).css('width');
+        $('.js-lable').animate({width:"100%"},500);
+    });
+    $('.js-search').blur(function(){
+        $('.js-lable').animate({width:lableTextWidth},500);
+    });
+</script>
