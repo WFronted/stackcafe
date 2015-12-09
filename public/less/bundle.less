@@ -59,3 +59,28 @@
     color:#16a085;
   }
 }
+
+.animation(@name,@duration,@timing,@count){
+  -webkit-animation: @name @duration @timing @count;
+  -moz-animation: @name @duration @timing @count;
+  -ms-animation: @name @duration @timing @count;
+  -o-animation: @name @duration @timing @count;
+  animation: @name @duration @timing @count;
+}
+
+@-webkit-keyframes rotate{
+  from{-webkit-transform: rotate(0deg);}
+  to{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotate{
+  from{-moz-transform: rotate(0deg);}
+  to{-moz-transform: rotate(360deg);}
+}
+@-ms-keyframes rotate{
+  from{-ms-transform: rotate(0deg);}
+  to{-ms-transform: rotate(360deg);}
+}
+@keyframes rotate{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}

@@ -1,3 +1,35 @@
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2794,7 +2826,7 @@ b.tags-name {
 .login-panel .login-t {
   text-align: center;
   margin: 0;
-  font-size: 1.3em;
+  font-size: 1.4em;
   color: #fff;
 }
 .login-panel-form .login-input {
@@ -2892,9 +2924,9 @@ b.tags-name {
 .sign-up-bt {
   padding-right: 46px;
   color: #fff;
-  margin-top: 8px;
 }
 .sign-up-bt h3 {
+  margin-top: 20px;
   font-size: 1.2em;
   line-height: 2.5em;
   color: #7f8c8d;
@@ -3051,4 +3083,33 @@ b.tags-name {
 .remove-bt:hover {
   color: #e74c3c;
   text-decoration: none;
+}
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #ecf0f1;
+  width: 100%;
+  height: 100%;
+}
+.loader .rotate-loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+  width: 50px;
+  height: 50px;
+  border: 7px solid #16a085;
+  border-left-color: #ecf0f1;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-animation: rotate 1s linear infinite;
+  -moz-animation: rotate 1s linear infinite;
+  -ms-animation: rotate 1s linear infinite;
+  -o-animation: rotate 1s linear infinite;
+  animation: rotate 1s linear infinite;
 }

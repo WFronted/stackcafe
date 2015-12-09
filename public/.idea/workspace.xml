@@ -25,18 +25,65 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.666667">
-              <caret line="163" column="106" selection-start-line="163" selection-start-column="106" selection-end-line="163" selection-end-column="106" />
+            <state vertical-scroll-proportion="-14.266666">
+              <caret line="349" column="22" selection-start-line="349" selection-start-column="22" selection-end-line="349" selection-end-column="22" />
+              <folding>
+                <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsive-reset.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/responsive-reset.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.166667">
+              <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cafe.less" pinned="false" current-in-tab="true">
+      <file leaf-file-name="top-panel.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base/top-panel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3800578">
+              <caret line="120" column="11" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="monkey.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/monkey.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cafe.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/cafe.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
-              <caret line="819" column="22" selection-start-line="819" selection-start-column="22" selection-end-line="819" selection-end-column="22" />
+            <state vertical-scroll-proportion="-8.584616">
+              <caret line="2805" column="24" selection-start-line="2805" selection-start-column="24" selection-end-line="2805" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bundle.less" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/less/bundle.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.866667">
+              <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -65,7 +112,6 @@
         <option value="$PROJECT_DIR$/base/indexShowcase.html" />
         <option value="$PROJECT_DIR$/base/showcase.html" />
         <option value="$PROJECT_DIR$/js/canvas-apps.js" />
-        <option value="$PROJECT_DIR$/less/responsive-reset.less" />
         <option value="$PROJECT_DIR$/articles.html" />
         <option value="$PROJECT_DIR$/articles-all.html" />
         <option value="$PROJECT_DIR$/articles-hot.html" />
@@ -93,11 +139,13 @@
         <option value="$PROJECT_DIR$/tags.html" />
         <option value="$PROJECT_DIR$/user-center.html" />
         <option value="$PROJECT_DIR$/users.html" />
+        <option value="$PROJECT_DIR$/less/responsive-reset.less" />
         <option value="$PROJECT_DIR$/base/nav.html" />
+        <option value="$PROJECT_DIR$/less/bundle.less" />
+        <option value="$PROJECT_DIR$/less/cafe.less" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/monkey.js" />
         <option value="$PROJECT_DIR$/base/top-panel.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/less/cafe.less" />
       </list>
     </option>
   </component>
@@ -227,6 +275,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\wamp\www\stackcafe\public\js" />
       <recent name="C:\Users\64945\Desktop\stackcafe\resources" />
       <recent name="C:\Users\64945\Desktop\stackcafe\resources\js" />
     </key>
@@ -514,12 +563,12 @@
       <workItem from="1449560920474" duration="6932000" />
       <workItem from="1449580090958" duration="6742000" />
       <workItem from="1449626337187" duration="1330000" />
-      <workItem from="1449629431814" duration="16150000" />
+      <workItem from="1449629431814" duration="22309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96607000" />
+    <option name="totallyTimeSpent" value="102766000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1444" height="876" extended-state="0" />
@@ -566,13 +615,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reputation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/cafe.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -634,14 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/bundle.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -693,14 +727,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.766666">
           <caret line="29" column="87" selection-start-line="29" selection-start-column="11" selection-end-line="29" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/less/responsive-reset.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16094032">
-          <caret line="148" column="26" selection-start-line="148" selection-start-column="26" selection-end-line="148" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -962,43 +988,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/nav.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1666667">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.2846821">
+          <caret line="34" column="43" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/monkey.js">
+    <entry file="file://$PROJECT_DIR$/js/jquery.nicescroll.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6398892">
-          <caret line="69" column="14" selection-start-line="69" selection-start-column="14" selection-end-line="69" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/top-panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5231214">
-          <caret line="91" column="21" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.666667">
-          <caret line="163" column="106" selection-start-line="163" selection-start-column="106" selection-end-line="163" selection-end-column="106" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/less/cafe.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="819" column="22" selection-start-line="819" selection-start-column="22" selection-end-line="819" selection-end-column="22" />
+        <state vertical-scroll-proportion="-8.584616">
+          <caret line="2805" column="24" selection-start-line="2805" selection-start-column="24" selection-end-line="2805" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/responsive-reset.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.166667">
+          <caret line="160" column="23" selection-start-line="160" selection-start-column="23" selection-end-line="160" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.266666">
+          <caret line="349" column="22" selection-start-line="349" selection-start-column="22" selection-end-line="349" selection-end-column="22" />
+          <folding>
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/bundle.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.866667">
+          <caret line="63" column="46" selection-start-line="63" selection-start-column="46" selection-end-line="63" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/monkey.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="19" selection-start-line="76" selection-start-column="19" selection-end-line="76" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/top-panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3800578">
+          <caret line="120" column="11" selection-start-line="120" selection-start-column="11" selection-end-line="120" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

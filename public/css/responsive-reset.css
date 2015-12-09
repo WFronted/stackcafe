@@ -138,10 +138,15 @@
     padding-right: 45px;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .login-panel .login-info,
   .login-panel .sign-up-bt {
     padding-left: 29px;
     padding-right: 29px;
+  }
+}
+@media (max-width: 991px) {
+  .login-panel .sign-up-bt {
+    margin-top: 50px;
   }
 }

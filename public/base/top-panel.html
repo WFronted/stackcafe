@@ -1,4 +1,7 @@
-<div class="container-fluid login-panel" id="login-panel" style="display: none">
+<div class="loader" style="display: none;">
+    <div class="rotate-loader"></div>
+</div>
+<div class="container-fluid login-panel" id="login-panel" style="display: none;">
     <a class="glyphicon glyphicon-remove remove-bt" id="remove-login"></a>
     <div class="row">
         <div class="col-md-5 login-info">
@@ -22,7 +25,8 @@
             </form>
         </div>
         <div class="col-md-6 col-md-push-1 sign-up-bt">
-            <h3>StackCafe是面向开发者的社区，它是一个开放的平台，在这里您可以学习、提问、写文章，并不断获得进步！如果您也是一名开发者，或者对开发充满兴趣，非常欢迎您的加入！</h3>
+            <p class="login-t">欢迎注册STACKCAFE</p>
+            <h3>StackCafe是面向开发者的、开放的社区平台，在这里您可以学习、提问、写文章，如果您也是一名开发者，或者对开发充满兴趣，请加入我们！</h3>
             <a href="#" class="js-signUpBt">立即注册</a>
         </div>
     </div>
@@ -76,7 +80,6 @@
         </form>
     </div>
 </div>
-
 <script>
     /* Login panel */
     $("#remove-login").click(function () {
@@ -114,4 +117,12 @@
         });
         $(".pop-wrap").remove();
     });
+
+//    $(window).load(function() {
+//        /* Loader */
+//        jQuery(".loader").fadeOut(500);
+//
+//        /* Login panel slideup */
+//        $("#login-panel").slideUp(500);
+//    });
 </script>

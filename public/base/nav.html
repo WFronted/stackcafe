@@ -31,12 +31,12 @@
 <script>
     /* Login panel */
     $("#login-sign").click(function () {
-        if ($(this).hasClass("header-login")) {
+        if ($(this).hasClass("js-header-login")) {
             $("#login-panel").slideUp(500);
-            $(this).removeClass("header-login");
+            $(this).removeClass("js-header-login");
         }else {
             $(".login-panel").slideDown(500);
-            $(this).addClass("header-login");
+            $(this).addClass("js-header-login");
         }
         return false;
     });
