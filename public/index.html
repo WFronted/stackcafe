@@ -10,65 +10,7 @@
     <link href="css/responsive-reset.css" rel="stylesheet"/>
 </head>
 <body>
-    <section>
-        <div class="container-fluid login-panel">
-            <div class="row">
-                <div class="col-md-5 login-info">
-                    <p class="login-t">欢迎登陆STACKCAFE</p>
-                    <form class="login-panel-form">
-                        <p class="login-input">
-                            <input class="required-item" type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
-                            <i class="glyphicon glyphicon-user"></i>
-                        </p>
-                        <p class="login-input">
-                            <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
-                            <i class="glyphicon glyphicon-lock"></i>
-                            <a href="#">忘记密码</a>
-                        </p>
-                        <button type="submit" class="login-bt">登录</button>
-                        <div class="rememberme clearfix">
-                            <label>
-                                <input type="checkbox" input="" name="rememberme" checked="checked" /> 保存登陆状态
-                            </label>
-                        </div>
-                    </form>
-                </div>
-                <div class="col-md-6 col-md-push-1 sign-up-bt">
-                    <h3>StackCafe是面向开发者的社区，它是一个开放的平台，在这里您可以学习、提问、写文章，并不断获得进步！如果您也是一名开发者，或者对开发充满兴趣，非常欢迎您的加入！</h3>
-                    <a href="#">立即注册</a>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid sign-panel">
-            <div class="row">
-                <div class="col-md-6 col-md-push-3 sign-wrap">
-                    <p class="sign-t">注册账号</p>
-                    <form class="sign-panel-form">
-                        <lable class="sign-up-input">
-                            <span>* 用户名:</span>
-                            <input type="text" value="字母、数字或者两者组合" onfocus="if (this.value == '字母、数字或者两者组合') {this.value = '';}" onblur="if (this.value == '') {this.value = '字母、数字或者两者组合';}" name="log" />
-                        </lable>
-                        <lable class="sign-up-input">
-                            <span>* Email:</span>
-                            <input type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
-                        </lable>
-                        <lable class="sign-up-input">
-                            <span>* 密码:</span>
-                            <input type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="password" />
-                        </lable>
-                        <lable class="sign-up-input">
-                            <span>* 确认密码:</span>
-                            <input type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="password" />
-                        </lable>
-                        <p class="sign-submit">
-                            <span>同意并接受《<a href="#">服务条款</a>》</span>
-                            <button type="submit">注册</button>
-                        </p>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="top-panel"></section>
     <section class="global-navbar" id="js-nav"></section>
     <section class="container-fluid showcase" id="js-indexShowcase"></section>
     <section class="cafe-con">
@@ -219,7 +161,7 @@
                                 </li>
                                 <li class="user-f-b ask-question-bt">
                                     <a href="#"><span class="glyphicon glyphicon-plus"></span>问个问题</a>
-                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span>写篇文章/笔记</a>
+                                    <a href="#"><span class="glyphicon glyphicon-pencil"></span>写文章/笔记</a>
                                 </li>
                             </ul>
                         </div>
@@ -234,7 +176,7 @@
                                 <p class="login-input">
                                     <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
                                     <i class="glyphicon glyphicon-lock"></i>
-                                    <a href="#">忘记</a>
+                                    <a href="javascript;" class="js-lostPasswordBt">忘记</a>
                                 </p>
                                 <p class="login-submit">
                                     <span class="loader_2" style="display: none;"></span>
@@ -244,7 +186,7 @@
                                     <label class="pull-left">
                                         <input type="checkbox" input="" name="rememberme" checked="checked" /> 保存登陆状态
                                     </label>
-                                    <a class="pull-right" href="#">注册会员</a>
+                                    <a class="pull-right js-signUpBt" href="javascript;">注册会员</a>
                                 </div>
                             </form>
                         </div>

@@ -41,10 +41,31 @@ $('.js-search').blur(function(){
 });
 
 
-
+/*加载公共部分代码*/
 $(document).ready(function(){
     $("#js-nav").load("base/nav.html");
     $("#js-indexShowcase").load("base/indexShowcase.html");
     $("#js-showcase").load("base/showcase.html");
     $("#js-footer").load("base/footer.html");
+    $("#top-panel").load("base/top-panel.html");
+});
+
+/*
+$(document).ready(function(){
+    /!* Login panel *!/
+    $("#login-sign").click(function () {
+        if ($(this).hasClass("header-login")) {
+            $("#login-panel").slideUp(500);
+            $(this).removeClass("header-login");
+        }else {
+            $(".login-panel").slideDown(500);
+            $(this).addClass("header-login");
+        }
+        return false;
+    });
+});
+*/
+
+$(" .pop-wrap").click(function(){
+    popWrap();
 });

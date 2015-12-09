@@ -22,8 +22,22 @@
         <a class="visible-md-inline visible-lg-inline" href="#">问个问题</a>
         <a class="hidden-lg hidden-md" href="#" title="ask a question"><span class="glyphicon glyphicon-question-sign"></span></a>
     </p>
-    <div class="login-register">
-        <a class="visible-md-inline visible-lg-inline" href="#" title="login register">登录·注册</a>
+    <div class="login-register" id="login-sign">
+        <a class="visible-md-inline visible-lg-inline" href="javascript:;" title="login register">登录·注册</a>
         <a class="hidden-lg hidden-md" href="#" title="login register"><span class="glyphicon glyphicon-log-in"></span></a>
     </div>
 </div>
+
+<script>
+    /* Login panel */
+    $("#login-sign").click(function () {
+        if ($(this).hasClass("header-login")) {
+            $("#login-panel").slideUp(500);
+            $(this).removeClass("header-login");
+        }else {
+            $(".login-panel").slideDown(500);
+            $(this).addClass("header-login");
+        }
+        return false;
+    });
+</script>

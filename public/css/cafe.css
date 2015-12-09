@@ -173,7 +173,7 @@ body {
   color: #fff;
 }
 .showcase {
-  background-color: #5cd4b5;
+  background-color: #011a2f;
   border-bottom: 1px solid #c7deee;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -181,7 +181,7 @@ body {
 .showcase-title {
   text-align: center;
   padding-bottom: 10px;
-  color: #2f3239;
+  color: #95a5a6;
 }
 .showcase-item .col-wrap {
   padding-left: 0;
@@ -194,7 +194,7 @@ body {
 }
 .showcase-item p > span {
   display: block;
-  color: #2f3239;
+  color: #95a5a6;
   line-height: 1.7em;
 }
 .showcase-item p > span > b {
@@ -232,7 +232,7 @@ body {
   color: #16a085;
   font-size: 1.1em;
   padding: 6px 14px 4px 50px;
-  background-color: #dfe5e9;
+  background-color: #122b40;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -649,7 +649,7 @@ body {
   font-size: 1.6em;
   margin-top: 10px;
   margin-bottom: 0;
-  color: #2f3239;
+  color: #95a5a6;
   font-weight: bold;
 }
 .common-search {
@@ -694,12 +694,12 @@ body {
   border: 1px solid #bdc3c7;
   font-size: 1.2em;
   color: #16a085;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
-  background-color: #dfe5e9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #122b40;
 }
 .common-search .search-form .search-text:focus {
   border: 1px solid #16a085;
@@ -708,21 +708,20 @@ body {
   box-shadow: 0 0 3px 1px #16a085;
 }
 .ask-question-bt {
-  margin: -10px;
   text-align: center;
 }
 .ask-question-bt a {
   display: block;
   padding: 20px 0;
-  background: #16a085;
+  background: #007e63;
   color: #fff;
   font-size: 1.5em;
   font-weight: bold;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  border-radius: 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -730,8 +729,8 @@ body {
 }
 .ask-question-bt a:hover,
 .ask-question-bt a:focus {
-  background: #2f3239;
-  color: #efefef;
+  background: #16a085;
+  color: #ecf0f1;
   text-decoration: none;
 }
 .ask-question-bt a span {
@@ -966,21 +965,17 @@ input[type="checkbox"]:checked::before {
   color: #7f8c8d;
 }
 .widget-user .user-f .user-f-b {
-  margin-bottom: 0;
-  margin-top: 2px;
+  margin: 10px 0 0;
 }
 .widget-user .user-f .user-f-b a {
   padding: 10px 0!important;
   font-size: 1.3em;
-  margin-top: 2px;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -ms-border-radius: 0;
-  -o-border-radius: 0;
-  border-radius: 0;
-}
-.widget-user .user-f .user-f-b a:last-child {
-  margin-bottom: -8px;
+  margin-top: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
 .widget-box {
   margin-top: 30px;
@@ -2541,8 +2536,13 @@ b.tags-name {
 }
 .reputation-require .reputation-states {
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 2.2em;
   color: #3498db;
+}
+.reputation-require .reputation-states i {
+  font-size: 0.8em;
+  padding-right: 6px;
+  vertical-align: 3px;
 }
 .reputation-require span {
   display: inline-block;
@@ -2587,7 +2587,7 @@ b.tags-name {
 .badge-administrator {
   background-color: #9400b3;
 }
-.badge-d-admin {
+.badge-contributor {
   background-color: #7d479e;
 }
 .badge-master {
@@ -2782,6 +2782,7 @@ b.tags-name {
   box-shadow: 0 0 3px 1px #16a085;
 }
 .login-panel {
+  position: relative;
   width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -2923,18 +2924,28 @@ b.tags-name {
   color: #ecf0f1;
   text-decoration: none;
 }
-.sign-panel {
+.pop-panel {
   position: fixed;
-  top: 0;
+  top: -100%;
   left: 0;
+  z-index: 200;
   width: 100%;
   height: 100%;
-  z-index: 999;
+}
+.pop-wrap {
   background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  height: 5000px;
+  z-index: 300;
 }
 .sign-wrap {
-  position: absolute;
-  top: 100px;
+  position: relative;
+  z-index: 400;
+  margin: 0 auto;
+  max-width: 520px;
   padding-left: 0;
   padding-right: 0;
   background-color: #fff;
@@ -2945,10 +2956,12 @@ b.tags-name {
   border-radius: 3px;
 }
 .sign-wrap .sign-t {
-  font-size: 1.4em;
-  padding: 10px 0;
+  font-size: 1.6em;
+  font-weight: bold;
+  padding: 20px 0;
+  margin-bottom: 50px;
   text-align: center;
-  background-color: #ecf0f1;
+  background-color: #cacecf;
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
   -ms-border-radius: 3px 3px 0 0;
@@ -2956,7 +2969,7 @@ b.tags-name {
   border-radius: 3px 3px 0 0;
 }
 .sign-panel-form {
-  padding: 0 30px;
+  padding: 0 60px 50px;
 }
 .sign-panel-form .sign-up-input {
   display: block;
@@ -2973,10 +2986,11 @@ b.tags-name {
   width: 100%;
   height: 40px;
   padding: 4px 10px;
-  margin-bottom: 18px;
+  margin-bottom: 26px;
   font-size: 1.2em;
   border: 1px solid #16a0a5;
   background-color: #ecf0f1;
+  color: #006d52;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -2992,19 +3006,20 @@ b.tags-name {
   box-shadow: 0 0 3px 1px #16a085;
 }
 .sign-panel-form .sign-submit {
-  margin: 30px 0 30px;
+  margin-top: 40px;
 }
 .sign-panel-form .sign-submit span {
   display: block;
   margin-bottom: 8px;
   font-size: 1.1em;
+  line-height: 26px;
 }
 .sign-panel-form .sign-submit button {
   display: block;
   width: 100%;
-  height: 40px;
-  padding: 4px 0;
-  font-size: 1.2em;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.6em;
   color: #ecf0f1;
   background-color: #007e63;
   border: 0;
@@ -3014,4 +3029,26 @@ b.tags-name {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
+}
+.sign-panel-form .sign-submit button:hover,
+.sign-panel-form .sign-submit button:focus {
+  background-color: #16a085;
+  color: #ecf0f1;
+}
+.sign-panel-form .lost-password-tip {
+  font-size: 15px;
+  color: #e74c3c;
+  line-height: 2em;
+  margin-bottom: 30px;
+}
+.remove-bt {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2em;
+  color: #7f8c8d;
+}
+.remove-bt:hover {
+  color: #e74c3c;
+  text-decoration: none;
 }
