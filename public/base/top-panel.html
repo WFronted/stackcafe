@@ -1,33 +1,35 @@
 <div class="loader" style="display:none;">
     <div class="rotate-loader"></div>
 </div>
-<div class="container-fluid login-panel" id="login-panel" style="display:none;">
-    <a class="glyphicon glyphicon-remove remove-bt" id="remove-login"></a>
-    <div class="row">
-        <div class="col-md-5 login-info">
-            <p class="login-t">欢迎登陆STACKCAFE</p>
-            <form class="login-panel-form">
-                <p class="login-input">
-                    <input class="required-item" type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
-                    <i class="glyphicon glyphicon-user"></i>
-                </p>
-                <p class="login-input">
-                    <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
-                    <i class="glyphicon glyphicon-lock"></i>
-                    <a class="js-lostPasswordBt" href="#">忘记密码</a>
-                </p>
-                <button type="submit" class="login-bt">登录</button>
-                <div class="rememberme clearfix">
-                    <label>
-                        <input type="checkbox" input="" name="rememberme" checked="checked" /> 保存登陆状态
-                    </label>
-                </div>
-            </form>
-        </div>
-        <div class="col-md-6 col-md-push-1 sign-up-bt">
-            <p class="login-t">欢迎注册STACKCAFE</p>
-            <h3>StackCafe是面向开发者的、开放的社区平台，在这里您可以学习、提问、写文章，如果您也是一名开发者，或者对开发充满兴趣，请加入我们！</h3>
-            <a href="#" class="js-signUpBt">立即注册</a>
+<div class="login-panel" id="login-panel" style="display:none;">
+    <div class="container">
+        <a class="glyphicon glyphicon-remove remove-bt" id="remove-login"></a>
+        <div class="row">
+            <div class="col-md-5 login-info">
+                <p class="login-t">欢迎登陆STACKCAFE</p>
+                <form class="login-panel-form">
+                    <p class="login-input">
+                        <input class="required-item" type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
+                        <i class="glyphicon glyphicon-user"></i>
+                    </p>
+                    <p class="login-input">
+                        <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
+                        <i class="glyphicon glyphicon-lock"></i>
+                        <a class="js-lostPasswordBt" href="#">忘记密码</a>
+                    </p>
+                    <button type="submit" class="login-bt">登录</button>
+                    <div class="rememberme clearfix">
+                        <label>
+                            <input type="checkbox" input="" name="rememberme" checked="checked" /> 保存登陆状态
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-md-push-1 sign-up-bt">
+                <p class="login-t">欢迎注册STACKCAFE</p>
+                <h3>StackCafe是面向开发者的、开放的社区平台，在这里您可以学习、提问、写文章，如果您也是一名开发者，或者对开发充满兴趣，请加入我们！</h3>
+                <a href="#" class="js-signUpBt">立即注册</a>
+            </div>
         </div>
     </div>
 </div>

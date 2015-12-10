@@ -410,7 +410,7 @@ body{
   color:#fff;
   font-size: 12px;
   font-style: normal;
-  .rounded-corners(1px);
+  .rounded-corners(3px);
 }
 
 .tags-name{
@@ -1824,6 +1824,7 @@ input[type="checkbox"]:checked::before {
 .detail-user-wrap{
   background-color: transparent!important;
   border: none!important;
+  margin-right: 0!important;
 }
 section.user-bg,
 section.user-contribution{
@@ -1890,9 +1891,9 @@ section.user-contribution{
   color:#fff;
   background-color: @link-color-hover;
   font-size: 1.3em;
-  .rounded-corners(2px);
+  .rounded-corners(3px);
+  .cafe-transition;
   &:hover{
-    .border(1px solid @link-color-hover);
     text-decoration: none;
     background-color: #fff;
     color:@link-color-hover;
@@ -2564,7 +2565,8 @@ b.tags-name{
   padding-bottom: 30px;
   background-color: #122b40 - #111;
   .login-info{
-    padding-left: 61px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .login-t{
     text-align: center;
@@ -2648,7 +2650,8 @@ b.tags-name{
   }
 }
 .sign-up-bt{
-  padding-right: 46px;
+  padding-right: 0;
+  padding-left: 0;
   color:#fff;
   h3{
     margin-top:20px;

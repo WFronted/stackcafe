@@ -131,18 +131,11 @@
     margin-top: 0;
   }
 }
-@media (max-width: 991px) {
-  .login-panel .login-info,
-  .login-panel .sign-up-bt {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-}
 @media (max-width: 767px) {
   .login-panel .login-info,
   .login-panel .sign-up-bt {
-    padding-left: 29px;
-    padding-right: 29px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (max-width: 991px) {
