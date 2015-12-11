@@ -143,3 +143,40 @@
     margin-top: 50px;
   }
 }
+@media (max-width: 991px) {
+  .user-top-info .user-i {
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+  }
+}
+@media (max-width: 991px) {
+  .user-top-info .user-i a {
+    top: -40px;
+  }
+}
+@media (max-width: 991px) {
+  .user-top-info .user-i .user-reputation {
+    top: 10px;
+  }
+}
+@media (max-width: 991px) {
+  .user-top-info .user-i .user-badge {
+    top: -34px;
+  }
+}
+@media (max-width: 991px) {
+  .user-info-states {
+    margin: 0;
+  }
+}
+@media (max-width: 991px) {
+  .user-info-states li span {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  section.user-contribution {
+    margin-left: 0;
+  }
+}

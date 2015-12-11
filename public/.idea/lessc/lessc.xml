@@ -9,12 +9,12 @@
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="C:\Users\nice1\Desktop\1\stackcafe\public\css" />
+                    <option name="path" value="D:\project\wamp\www\stackcafe\public\css" />
                   </CssDirectory>
                 </list>
               </option>
               <option name="id" value="0" />
-              <option name="lessDirPath" value="C:\Users\nice1\Desktop\1\stackcafe\public\less" />
+              <option name="lessDirPath" value="D:\project\wamp\www\stackcafe\public\less" />
               <option name="name" value="cafe" />
             </LessProfile>
           </value>
