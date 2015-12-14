@@ -64,7 +64,7 @@
         </form>
     </div>
 </div>
-<div class="container-fluid pop-panel" id="lost-password">
+<div class="container-fluid pop-panel" id="lost-password" style="display: none;">
     <div class="sign-wrap">
         <a class="glyphicon glyphicon-remove remove-bt js-removePop"></a>
         <p class="sign-t">忘记密码</p>
@@ -92,7 +92,8 @@
     /* Lost password */
     $(".js-lostPasswordBt").click(function () {
         $(".pop-panel").animate({"top":"-110%"},100).hide();
-        $("#lost-password").show().animate({"top":"60px"},400).prepend("<div class='pop-wrap'></div>");
+        $("#lost-password").show().animate({"top":"60px"},400);
+        $("body").prepend("<div class='pop-wrap'></div>");
         popWrap();
         return false;
     });
@@ -107,7 +108,8 @@
     /* SignUp */
     $(".js-signUpBt").click(function () {
         $(".pop-panel").animate({"top":"-110%"},100).hide();
-        $("#sign-panel").show().animate({"top":"15px"},400).prepend("<div class='pop-wrap'></div>");
+        $("#sign-panel").show().animate({"top":"15px"},400);
+        $("body").prepend("<div class='pop-wrap'></div>");
         popWrap();
         return false;
     });

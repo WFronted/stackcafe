@@ -26,11 +26,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="top-panel.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/base/top-panel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.2">
+              <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+              <folding>
+                <element signature="n#div#1;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="cafe.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/less/cafe.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.6798732">
-              <caret line="2598" column="24" selection-start-line="2598" selection-start-column="24" selection-end-line="2598" selection-end-column="24" />
+            <state vertical-scroll-proportion="0.42472267">
+              <caret line="2801" column="15" selection-start-line="2801" selection-start-column="15" selection-end-line="2801" selection-end-column="15" />
               <folding>
                 <element signature="e#19193#19707#0" expanded="false" />
                 <element signature="e#33215#34098#0" expanded="false" />
@@ -71,6 +85,7 @@
         <option value="$PROJECT_DIR$/users.html" />
         <option value="$PROJECT_DIR$/less/responsive-reset.less" />
         <option value="$PROJECT_DIR$/base/footer.html" />
+        <option value="$PROJECT_DIR$/base/top-panel.html" />
         <option value="$PROJECT_DIR$/less/cafe.less" />
       </list>
     </option>
@@ -91,8 +106,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="29" />
+    <option name="x" value="-119" />
+    <option name="y" value="36" />
     <option name="width" value="1452" />
     <option name="height" value="876" />
   </component>
@@ -442,15 +457,15 @@
       <option name="number" value="Default" />
       <updated>1449795817768</updated>
       <workItem from="1449795820395" duration="19114000" />
-      <workItem from="1450056769496" duration="17653000" />
+      <workItem from="1450056769496" duration="21074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36767000" />
+    <option name="totallyTimeSpent" value="40188000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="29" width="1452" height="876" extended-state="1" />
+    <frame x="-119" y="36" width="1452" height="876" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -628,16 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/top-panel.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="113.1">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="29.7">
@@ -677,14 +682,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5">
-          <caret line="346" column="0" selection-start-line="346" selection-start-column="0" selection-end-line="349" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -762,10 +759,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-100.7">
+          <caret line="349" column="36" selection-start-line="349" selection-start-column="36" selection-end-line="349" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/top-panel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.2">
+          <caret line="125" column="20" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#1;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#3;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/less/cafe.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6798732">
-          <caret line="2598" column="24" selection-start-line="2598" selection-start-column="24" selection-end-line="2598" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.42472267">
+          <caret line="2801" column="15" selection-start-line="2801" selection-start-column="15" selection-end-line="2801" selection-end-column="15" />
           <folding>
             <element signature="e#19193#19707#0" expanded="false" />
             <element signature="e#33215#34098#0" expanded="false" />
