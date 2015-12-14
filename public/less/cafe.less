@@ -314,7 +314,7 @@ body{
     width:60px;
     text-align: center;
     .rounded-corners;
-    background-color: #efefef;
+    background-color: #ecf0f1 - #0a0a0a;
     margin-right: 10px;
     b{
       display: block;
@@ -440,7 +440,7 @@ body{
     padding:0;
     margin-right:10px;
     margin-bottom: 0;
-    background-color: #efefef;
+    background-color: #ecf0f1 - #0a0a0a;
     text-align: center;
     .rounded-corners;
     >li{
@@ -996,12 +996,8 @@ input[type="checkbox"]:checked::before {
   &:not(:first-child){
     margin-top: 10px;
   }
-  img{
-    display: block;
-    float: left;
-    width:20px;
-    height:20px;
-    .rounded-corners(20px);
+  &:nth-child(2n){
+    background-color: #f6f8f7;
   }
   .hottest-list{
     margin:0;
@@ -1033,6 +1029,19 @@ input[type="checkbox"]:checked::before {
         font-weight: normal;
       }
     }
+    .update{
+      margin-bottom: 4px;
+      span{
+        font-weight: normal;
+      }
+      img{
+        display: block;
+        width:20px;
+        height:20px;
+        margin-top: -4px;
+        .rounded-corners(20px);
+      }
+    }
   }
   .hottest-list-article{
     li{
@@ -1046,7 +1055,19 @@ input[type="checkbox"]:checked::before {
     }
   }
 }
-
+.recent-news{
+  margin: 0 -10px!important;
+  overflow: visible!important;
+  .hottest-list{
+    margin-top: 5px;
+    padding:10px;
+  }
+  .answer-c{
+    border-left: 4px solid #a4e3b8;
+    padding-left: 4px!important;
+    margin-top: 6px!important;
+  }
+}
 //tags page style
 .tags-help{
   margin-left: -15px;
@@ -1861,7 +1882,25 @@ section.user-bg{
     &:first-child{
       border-left: 0;
     }
+    i{
+      display: none;
+      position: absolute;
+      bottom:-9px;
+      left:50%;
+      margin-left: -8px;
+      width:16px;
+      height:16px;
+      background-color: #fff;
+      .border;
+      border-left: 0;
+      border-top: 0;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
     a{
+      position: relative;
       display: block;
       padding:16px 20px;
       color:@navbar-background;
@@ -1872,6 +1911,9 @@ section.user-bg{
         span{
           background-color: #16a085;
           color:#ecf0f1;
+        }
+        i{
+          display: block;
         }
       }
     }
@@ -1920,6 +1962,17 @@ section.user-contribution{
   margin-left: 15px;
   .border;
   .rounded-corners(3px);
+  .list-item{
+    .tags-name{
+      margin-left: 0;
+    }
+    .user-pic {
+      margin-top: 2px;
+      a{
+      margin-right: 10px;
+      }
+    }
+  }
 }
 .user-contribution-t{
   background-color:#fff - #111;
@@ -1936,15 +1989,30 @@ section.user-contribution{
   }
 }
 .reputation-record{
-  padding:10px;
+ .rep-item{
+   padding:10px;
+   &:not(:first-child){
+     border-top: 1px solid #ecf0f1 - #111;
+     padding:18px 10px 10px;
+   }
+   &:not(:first-child){
+     padding:18px 10px 10px;
+   }
+   &:nth-child(2n){
+     background-color: #f6f8f7;
+   }
+ }
   .rep-title{
-    margin:4px 0 0 60px;
+    margin:6px 0;
     font-size: 1.1em;
     line-height: 1.8em;
     border-left: 4px solid #a4e3b8;
     padding-left: 4px;
     a{
-      color:#16a085;
+      color:@navbar-background;
+      &:hover,&:focus{
+        color:#16a085;
+      }
     }
   }
 }
@@ -1961,16 +2029,17 @@ section.user-contribution{
     b{
       display: block;
       width:40px;
-      height:20px;
+      height:18px;
+      line-height: 18px;
       color:#fff;
     }
     &.up{
       background-color: #16a085;
-      .rounded-corners(8px);
+      .rounded-corners(3px);
     }
     &.down{
       background-color: #e74c3c + #222;
-      .rounded-corners(8px);
+      .rounded-corners(3px);
     }
   }
   .reason{
@@ -2087,20 +2156,7 @@ b.tags-name{
     }
   }
 }
-.recent-news{
-  margin: 0 -10px!important;
-  overflow: visible!important;
-  .hottest-list{
-    background-color: #f6f8f7;
-    margin-top: 5px;
-    padding:10px;
-  }
-  .answer-c{
-    border-left: 4px solid #a4e3b8;
-    padding-left: 4px!important;
-    margin-top: 6px!important;
-  }
-}
+
 /*
 .following-wrap{
   position: relative;
@@ -2452,9 +2508,9 @@ b.tags-name{
 //footer style
 .stackcafe-footer{
   width:100%;
-  background-color: #3e3e48;
+  background-color: @navbar-background;
   border-top: 1px solid #c7deee;
-  padding: 30px 0 20px;
+  padding: 50px 0;
   .container{
     padding-left: 0;
     padding-right: 0;
@@ -2471,24 +2527,16 @@ b.tags-name{
   }
 }
 .footer-s{
-  font-size: 1.8em;
+  font-size: 1.4em;
   font-weight: bold;
-  color:#16a085;
+  color:#16a085 + #222;
   margin-top: 8px;
-}
-.footer-c{
-  font-size: 16px;
-  line-height: 1.8em;
-  margin:0;
-  padding-left: 10px;
-  color:#16a085;
-  border-left: 4px solid #16a085 + #222;
-}
-.stackcafe-author{
-  text-align: right;
-  font-weight: bold;
-  margin-top: 6px;
-  color:#16a085 + #333;
+  margin-bottom: 24px;
+  text-align: center;
+  span{
+    vertical-align: 2px;
+    margin:0 4px;
+  }
 }
 
 .stackcafe-relevant{
@@ -2503,21 +2551,12 @@ b.tags-name{
     }
   }
 }
-
-.stackcafe-copyright{
-  background-color: @navbar-background;
-  padding:20px 0;
-  .container{
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-.copyright{
+.following-stackcafe{
   color:#95a5a6;
   margin:0;
+  text-align: center;
   span{
     display: inline-block;
-    margin-right: 20px;
     font-size: 1.1em;
   }
   a{
@@ -2553,15 +2592,33 @@ b.tags-name{
     background-position:-64px -21px;
   }
   .email{
-    font-size: 1.1em;
+    font-size: 1.3em;
+    vertical-align: 10px;
+    margin-left: 20px;
     i{
-      margin-right: 4px;
-      vertical-align: -2px;
+      margin-right: 8px;
+      font-size: 1.2em;
+      vertical-align: -4px;
     }
   }
 }
-.copyright-c{
-  margin-top: 24px;
+.stackcafe-copyright{
+  background-color: @navbar-background;
+  padding:30px 0;
+  border-top: 1px solid #95a5a6 - #333;
+  text-align: center;
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .copyright-c{
+    font-size: 1.1em;
+    color:#95a5a6;
+    margin:0;
+    span{
+      margin:0 20px;
+    }
+  }
 }
 
 .search-page{

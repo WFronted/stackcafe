@@ -74,9 +74,9 @@ $(" .pop-wrap").click(function(){
 $(document).ready(
     function() {
         $("html").niceScroll({
-            scrollspeed: 90,
+            scrollspeed: 130,
             mousescrollstep: 56,
-            cursorwidth: 10,
+            cursorwidth: 18,
             cursorborder: 0,
             cursorcolor: '#bdc3c7',
             autohidemode: false,

@@ -66,15 +66,15 @@
 }
 
 //article page style
-.list-item-main .tags-name,
-.article-view{
-  @media(min-width:@screen-max-width991)and(max-width:@screen-max-width1199){
-    display:none;
-  }
-  @media(max-width:@screen-max-width767){
-    display:none;
-  }
-}
+//.list-item-main .tags-name,
+//.article-view{
+//  //@media(min-width:@screen-max-width991)and(max-width:@screen-max-width1199){
+//  //  display:none;
+//  //}
+//  @media(max-width:@screen-max-width767){
+//    display:none;
+//  }
+//}
 .common-showcase{
   .container{
     @media(max-width:@screen-max-width767){
@@ -126,22 +126,25 @@
 }
 .footer-s{
   @media(max-width:@screen-max-width991){
-    margin-top: 30px;
+    margin-top: 50px;
+  }
+}
+.stackcafe-footer{
+  .footer-wrap{
+    @media(max-width:@screen-max-width767){
+      margin-top: 30px;
+      text-align: center;
+    }
   }
 }
 .stackcafe-copyright{
-  @media(max-width:@screen-max-width991){
-    text-align:center;
-  }
-  .email{
-    @media(max-width:@screen-max-width991){
-      margin-top: 16px;
-    }
-  }
   .copyright-c{
-    @media(max-width:@screen-max-width991){
-      margin-top: 0;
+    span{
+      @media(max-width:@screen-max-width767){
+        display: block;
+      }
     }
+
   }
 }
 
