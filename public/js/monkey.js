@@ -71,7 +71,7 @@ $(" .pop-wrap").click(function(){
 });
 
 /* NiceScroll */
-$(document).ready(
+/*$(document).ready(
     function() {
         $("html").niceScroll({
             scrollspeed: 130,
@@ -85,6 +85,6 @@ $(document).ready(
             cursorborderradius: 0
         })
     }
-);
+);*/
 
 

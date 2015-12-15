@@ -64,7 +64,7 @@
         </form>
     </div>
 </div>
-<div class="container-fluid pop-panel" id="lost-password" style="display: none;">
+<div class="container-fluid pop-panel" id="lost-password">
     <div class="sign-wrap">
         <a class="glyphicon glyphicon-remove remove-bt js-removePop"></a>
         <p class="sign-t">忘记密码</p>
@@ -91,24 +91,26 @@
     });
     /* Lost password */
     $(".js-lostPasswordBt").click(function () {
-        $(".pop-panel").animate({"top":"-110%"},100).hide();
-        $("#lost-password").show().animate({"top":"60px"},400);
+        $("#remove-login").click();
+        $(".pop-panel").animate({"top":"-1000px"},100).hide();
+        $("#lost-password").show().animate({"top":"50%","margin-top":"-228px"},400);
         $("body").prepend("<div class='pop-wrap'></div>");
         popWrap();
         return false;
     });
     function popWrap() {
         $(".pop-wrap").click(function () {
-            $(".pop-panel").animate({"top":"-100%"},300).fadeOut(function () {
-                $(this).animate({"top":"-100%"},300);
+            $(".pop-panel").animate({"top":"-1000px"},300).fadeOut(function () {
+                $(this).animate({"top":"-200%"},300);
             });
             $(this).remove();
         });
     }
     /* SignUp */
     $(".js-signUpBt").click(function () {
-        $(".pop-panel").animate({"top":"-110%"},100).hide();
-        $("#sign-panel").show().animate({"top":"15px"},400);
+        $("#remove-login").click();
+        $(".pop-panel").animate({"top":"-1000px"},100).hide();
+        $("#sign-panel").show().animate({"top":"50%","margin-top":"-330px"},400);
         $("body").prepend("<div class='pop-wrap'></div>");
         popWrap();
         return false;
@@ -116,8 +118,8 @@
 
     /* removePop */
     $(".js-removePop").click(function(){
-        $(this).parent().parent().animate({"top":"-100%"},300).fadeOut(function () {
-            $(".pop-wrap").animate({"top":"-100%"},300);
+        $(this).parent().parent().animate({"top":"-1000px"},300).fadeOut(function () {
+            $(".pop-wrap").animate({"top":"-200%"},300);
         });
         $(".pop-wrap").remove();
     });
