@@ -71,12 +71,12 @@ $(" .pop-wrap").click(function(){
 });
 
 /* NiceScroll */
-/*$(document).ready(
+$(document).ready(
     function() {
         $("html").niceScroll({
             scrollspeed: 130,
             mousescrollstep: 56,
-            cursorwidth: 18,
+            cursorwidth: 6,
             cursorborder: 0,
             cursorcolor: '#bdc3c7',
             autohidemode: false,
@@ -85,6 +85,6 @@ $(" .pop-wrap").click(function(){
             cursorborderradius: 0
         })
     }
-);*/
+);
 
 
