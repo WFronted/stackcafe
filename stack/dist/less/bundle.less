@@ -1,0 +1,45 @@
+
+
+/**
+ ** Bundle Class
+**/
+.rounded-corners (@radius:3px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+.transition(){
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+.box-shadow(@h-shadow,@v-shadow,@blur,@spread,@color,@inset){
+  -webkit-box-shadow: @h-shadow @v-shadow @blur @spread @color @inset;
+  -moz-box-shadow: @h-shadow @v-shadow @blur @spread @color @inset;
+  -ms-box-shadow: @h-shadow @v-shadow @blur @spread @color @inset;
+  -o-box-shadow: @h-shadow @v-shadow @blur @spread @color @inset;
+  box-shadow: @h-shadow @v-shadow @blur @spread @color @inset;
+}
+.border(@border:1px solid #c7deee){
+  border:@border;
+}
+.link-style(){
+  color:@navbar-background;
+  .cafe-transition;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color:#16a085;
+  }
+}
+
+.animation(@name,@duration,@timing,@count){
+  -webkit-animation: @name @duration @timing @count;
+  -moz-animation: @name @duration @timing @count;
+  -ms-animation: @name @duration @timing @count;
+  -o-animation: @name @duration @timing @count;
+  animation: @name @duration @timing @count;
+}

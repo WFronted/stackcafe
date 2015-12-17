@@ -129,22 +129,17 @@
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/monkey.js"></script>
 <script>
-
     $(document).scroll(function(){
-        var scrollTop=$(this).scrollTop();
-        var navBarTopHeight=$('.navbar-top').outerHeight();
-        var navBarBottomHeight=$('.navbar-bottom').outerHeight();
         if($(this).width()>991){
-            if(scrollTop >navBarTopHeight){
-                $('.navbar-static').fadeOut(300);
+            if($(this).scrollTop() >$('.navbar-top').outerHeight()){
+                $('.navbar-static').fadeOut(500);
                 $('.navbar-fixed').slideDown(500);
             }
-            if(scrollTop <= navBarBottomHeight) {
-                $('.navbar-static').fadeIn(500);
+            if($(this).scrollTop() <= $('.navbar-bottom').outerHeight()) {
+                $('.navbar-static').slideDown(500);
                 $('.navbar-fixed').hide();
             }
         }
-
     })
 </script>
 </body>

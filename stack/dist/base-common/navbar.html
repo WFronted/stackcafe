@@ -1,0 +1,107 @@
+    <div class="navbar-global navbar-static">
+        <div class="container navbar-wrap">
+            <div class="navbar-top">
+                <div class="logo clearfix">
+                    <h1 class="logo-img pull-left">stackcafe</h1>
+                    <h2 class="logo-text pull-left hidden-xs hidden-sm">专注于开发者的社区问答平台</h2>
+                </div>
+                <div class="login">
+                    <p class="login-bt"><a href="javascript:;" id="login">登录</a> | <a class="js-signUpBt" href="javascript:;">注册</a></p>
+                    <div class="dropdown user-info">
+                        <a class="user-pic" id="collapse-dropdown" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/user-pic.jpg" /></a>
+                        <ul class="dropdown-menu dropdown-menu-right user-item" aria-labelledby="collapse-dropdown">
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">标签</a></li>
+                            <li><a href="#">用户</a></li>
+                            <li><a href="#">建议</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-bottom clearfix">
+                <form class="navbar-form hidden-xs" role="search" >
+                    <lable class="navbar-form-lable">
+                        <input type="text" class="search-input" placeholder="搜索一下，其实很简单">
+                        <button type="submit" class="search-button glyphicon glyphicon-search"></button>
+                    </lable>
+                </form>
+                <nav class="navbar-content hidden-xs">
+                    <ul class="navbar-list clearfix">
+                        <li><a href="#">问答</a></li>
+                        <li><a href="#">标签</a></li>
+                        <li><a href="#">用户</a></li>
+                        <li><a href="#">建议</a></li>
+                        <li class="ask-question"><a href="#">撰写问题</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <nav class="dropdown stack-collapse visible-xs">
+            <a class="nav-hamburger glyphicon glyphicon-align-justify" id="collapse-dropdown" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+            <ul class="dropdown-menu stack-collapse-list" aria-labelledby="collapse-dropdown">
+                <li><a href="#">问答</a></li>
+                <li><a href="#">标签</a></li>
+                <li><a href="#">用户</a></li>
+                <li><a href="#">建议</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="navbar-global navbar-fixed">
+        <div class="container navbar-wrap">
+            <div class="navbar-bottom clearfix">
+                <h1 class="logo-2">stackcafe</h1>
+                <form class="navbar-form navbar-form-2 hidden-xs" role="search" >
+                    <lable class="navbar-form-lable">
+                        <input type="text" class="search-input" placeholder="搜索一下，其实很简单">
+                        <button type="submit" class="search-button glyphicon glyphicon-search"></button>
+                    </lable>
+                </form>
+                <nav class="navbar-content hidden-xs">
+                    <ul class="navbar-list clearfix">
+                        <li><a href="#">问答</a></li>
+                        <li><a href="#">标签</a></li>
+                        <li><a href="#">用户</a></li>
+                        <li><a href="#">建议</a></li>
+                        <li class="ask-question"><a href="#">撰写问题</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-xs visible-xs">
+        <form class="navbar-form" role="search" >
+            <lable class="navbar-form-lable">
+                <input type="text" class="search-input" placeholder="搜索一下，其实很简单">
+                <button type="submit" class="search-button glyphicon glyphicon-search"></button>
+            </lable>
+        </form>
+        <a class="ask-q-bt glyphicon glyphicon-pencil" href="#"></a>
+    </div>
+
+    <script>
+        $(document).scroll(function(){
+            if($(this).width()>991){
+                if($(this).scrollTop() >$('.navbar-top').outerHeight()){
+                    $('.navbar-static').fadeOut(500);
+                    $('.navbar-fixed').slideDown(500);
+                }
+                if($(this).scrollTop() <= $('.navbar-bottom').outerHeight()) {
+                    $('.navbar-static').slideDown(500);
+                    $('.navbar-fixed').hide();
+                }
+            }
+        })
+        /*pop Login panel */
+        $("#login").click(function () {
+            if ($(this).hasClass("js-header-login")) {
+                $("#login-panel").slideUp(500);
+                $(this).removeClass("js-header-login");
+            }else {
+                $(".login-panel").slideDown(500);
+                $(this).addClass("js-header-login");
+            }
+            return false;
+        });
+    </script>

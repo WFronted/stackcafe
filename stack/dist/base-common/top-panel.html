@@ -1,0 +1,134 @@
+<div class="loader" style="display:none;">
+    <div class="rotate-loader"></div>
+</div>
+<div class="login-panel" id="login-panel" style="display:none;">
+    <div class="container">
+        <a class="glyphicon glyphicon-remove remove-bt" id="remove-login"></a>
+        <div class="row">
+            <div class="col-md-5 login-info">
+                <p class="login-t">欢迎登陆STACKCAFE</p>
+                <form class="login-panel-form">
+                    <p class="login-input">
+                        <input class="required-item" type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
+                        <i class="glyphicon glyphicon-user"></i>
+                    </p>
+                    <p class="login-input">
+                        <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
+                        <i class="glyphicon glyphicon-lock"></i>
+                        <a class="js-lostPasswordBt" href="#">忘记密码</a>
+                    </p>
+                    <button type="submit" class="login-bt">登录</button>
+                    <div class="rememberme clearfix">
+                        <label>
+                            <input type="checkbox" input="" name="rememberme" checked="checked" /> 保存登陆状态
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 col-md-push-1 sign-up-bt">
+                <p class="login-t">欢迎注册STACKCAFE</p>
+                <h3>StackCafe是面向开发者的、开放的社区问答平台，如果您也是一名开发者，或者对开发充满兴趣，欢迎加入我们！</h3>
+                <a href="#" class="js-signUpBt">立即注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid pop-panel" id="sign-panel">
+    <div class="sign-wrap">
+        <a class="glyphicon glyphicon-remove remove-bt js-removePop"></a>
+        <p class="sign-t">注册账号</p>
+        <form class="sign-panel-form">
+            <lable class="sign-up-input">
+                <span>* 用户名:</span>
+                <input type="text" value="字母、数字或者两者组合" onfocus="if (this.value == '字母、数字或者两者组合') {this.value = '';}" onblur="if (this.value == '') {this.value = '字母、数字或者两者组合';}" name="log" />
+            </lable>
+            <lable class="sign-up-input">
+                <span>* Email:</span>
+                <input type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
+            </lable>
+            <lable class="sign-up-input">
+                <span>* 密码:</span>
+                <input type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="password" />
+            </lable>
+            <lable class="sign-up-input">
+                <span>* 确认密码:</span>
+                <input type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="password" />
+            </lable>
+            <p class="sign-submit">
+                        <span>
+                            <input type="checkbox" input="" name="rememberme" checked="checked" />
+                            同意并接受《<a href="#">服务条款</a>》
+                        </span>
+                <button type="submit">注册</button>
+            </p>
+        </form>
+    </div>
+</div>
+<div class="container-fluid pop-panel" id="lost-password">
+    <div class="sign-wrap">
+        <a class="glyphicon glyphicon-remove remove-bt js-removePop"></a>
+        <p class="sign-t">忘记密码</p>
+        <form class="sign-panel-form">
+            <p class="lost-password-tip">
+                忘记了您的登录密码？请输入您注册时填写的Email,然后点击找回密码，您将收到一封邮件，点击邮件里面的链接来重新设置您的登录密码。
+            </p>
+            <lable class="sign-up-input">
+                <span>* Email:</span>
+                <input type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
+            </lable>
+            <p class="sign-submit">
+                <button type="submit">找回密码</button>
+            </p>
+        </form>
+    </div>
+</div>
+<script>
+    /* Login panel */
+    $("#remove-login").click(function () {
+        $("#login-panel").slideUp(500);
+        $("#login").removeClass("js-header-login");
+        return false;
+    });
+    /* Lost password */
+    $(".js-lostPasswordBt").click(function () {
+        $("#remove-login").click();
+        $(".pop-panel").animate({"top":"-1000px"},100).hide();
+        $("#lost-password").show().animate({"top":"50%","margin-top":"-228px"},400);
+        $("body").prepend("<div class='pop-wrap'></div>");
+        popWrap();
+        return false;
+    });
+    function popWrap() {
+        $(".pop-wrap").click(function () {
+            $(".pop-panel").animate({"top":"-1000px"},300).fadeOut(function () {
+                $(this).animate({"top":"-200%"},300);
+            });
+            $(this).remove();
+        });
+    }
+    /* SignUp */
+    $(".js-signUpBt").click(function () {
+        $("#remove-login").click();
+        $(".pop-panel").animate({"top":"-1000px"},100).hide();
+        $("#sign-panel").show().animate({"top":"50%","margin-top":"-330px"},400);
+        $("body").prepend("<div class='pop-wrap'></div>");
+        popWrap();
+        return false;
+    });
+
+    /* removePop */
+    $(".js-removePop").click(function(){
+        $(this).parent().parent().animate({"top":"-1000px"},300).fadeOut(function () {
+            $(".pop-wrap").animate({"top":"-200%"},300);
+        });
+        $(".pop-wrap").remove();
+    });
+
+    $(window).load(function() {
+        /* Loader */
+        jQuery(".loader").fadeOut(500);
+
+        /* Login panel slideup */
+        $("#login-panel").slideUp(500);
+    });
+</script>

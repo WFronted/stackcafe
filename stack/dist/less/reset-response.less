@@ -1,0 +1,166 @@
+@screen-max-width991:991px;
+@screen-max-width767:767px;
+@screen-max-width600:600px;
+@screen-max-width1199:1199px;
+
+
+
+
+
+.container{
+  @media(min-width:@screen-max-width1199){
+    width:990px;
+  }
+}
+.navbar-global {
+  .container {
+    @media (min-width: @screen-max-width767) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+.right-bar{
+  @media(max-width:@screen-max-width991){
+    margin-left: 0!important;
+    margin-top: 15px;
+  }
+}
+
+.widget-box-con{
+  table{
+    @media(min-width:@screen-max-width600)and(max-width:@screen-max-width991){
+      width: 80% !important;;
+      margin-left: 10%;
+    }
+  }
+}
+.con-main{
+  .con-wrap{
+    @media(max-width:@screen-max-width991){
+      margin-right: 0!important;
+    }
+  }
+}
+
+.answers-con,
+.an-counts{
+  @media(max-width:@screen-max-width991){
+    margin-right: -15px;
+  }
+}
+.footer-s{
+  @media(max-width:@screen-max-width991){
+    margin-top: 50px;
+  }
+}
+.stackcafe-footer{
+  .footer-wrap{
+    @media(max-width:@screen-max-width767){
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+}
+.stackcafe-copyright{
+  .copyright-c{
+    span{
+      @media(max-width:@screen-max-width767){
+        display: block;
+      }
+    }
+
+  }
+}
+
+.login-panel{
+  .login-info,.sign-up-bt{
+    @media(max-width:@screen-max-width767){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .sign-up-bt{
+    @media(max-width:@screen-max-width991){
+      margin-top: 50px;
+    }
+  }
+}
+.user-top-info{
+  .user-i{
+    @media(max-width:@screen-max-width991){
+      height:60px;
+      background-color: rgba(0,0,0,0.6);
+      bottom:0;
+    }
+    a{
+      @media(max-width:@screen-max-width991){
+        top:-40px;
+      }
+    }
+    .user-reputation{
+      @media(max-width:@screen-max-width991){
+        top:10px;
+      }
+    }
+    .user-badge{
+      @media(max-width:@screen-max-width991){
+        top:-34px;
+      }
+    }
+  }
+}
+.user-info-states{
+  @media(max-width:@screen-max-width991){
+    margin:0;
+  }
+  li {
+    span{
+      @media(max-width:@screen-max-width991){
+        display: none;
+      }
+    }
+  }
+}
+section.user-contribution{
+  @media(max-width:@screen-max-width991){
+    margin-left: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbar-form{
+  @media(max-width:@screen-max-width991){
+    position: absolute;
+    top:20px;
+    left:260px;
+  }
+}
+.navbar-top{
+  @media(max-width:@screen-max-width767){
+    min-height:60px;
+    .login{
+      top:20px;
+      right:-5px;
+    }
+  }
+  .logo{
+    @media(max-width:@screen-max-width767){
+      top:8px;
+      left:50%;
+      margin-left: -89px;
+      h1{
+        margin-top: 0;
+      }
+    }
+  }
+}
