@@ -101,7 +101,7 @@
     function popWrap() {
         $(".pop-wrap").click(function () {
             $(".pop-panel").animate({"top":"-1000px"},300).fadeOut(function () {
-                $(this).animate({"top":"-200%"},300);
+                $('.pop-wrap').animate({"top":"-200%"},300);
             });
             $(this).remove();
         });
@@ -110,7 +110,7 @@
     $(".js-signUpBt").click(function () {
         $("#remove-login").click();
         $(".pop-panel").animate({"top":"-1000px"},100).hide();
-        $("#sign-panel").show().animate({"top":"50%","margin-top":"-330px"},400);
+        $("#sign-panel").show().animate({"top":"50%"},400);
         $("body").prepend("<div class='pop-wrap'></div>");
         popWrap();
         return false;

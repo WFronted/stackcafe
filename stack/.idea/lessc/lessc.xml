@@ -6,15 +6,16 @@
         <entry key="0">
           <value>
             <LessProfile>
+              <option name="compressOutput" value="true" />
               <option name="cssDirectories">
                 <list>
                   <CssDirectory>
-                    <option name="path" value="D:\project\wamp\www\stackcafe\stack\dist\css" />
+                    <option name="path" value="D:\project\wamp\www\stackcafe\stack\css" />
                   </CssDirectory>
                 </list>
               </option>
               <option name="id" value="0" />
-              <option name="lessDirPath" value="D:\project\wamp\www\stackcafe\stack\dist\less" />
+              <option name="lessDirPath" value="D:\project\wamp\www\stackcafe\stack\less" />
               <option name="name" value="stack" />
             </LessProfile>
           </value>

@@ -41,7 +41,7 @@ $('.js-search').blur(function(){
 });
 
 
-/*¼ÓÔØ¹«¹²²¿·Ö´úÂë*/
+/*ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½ï¿½*/
 $(document).ready(function(){
     $("#js-navbar").load("base-common/navbar.html");
     $("#js-panel").load("base-common/top-panel.html");
@@ -73,7 +73,7 @@ $(" .pop-wrap").click(function(){
 $(document).ready(
     function() {
         $("html").niceScroll({
-            scrollspeed: 100,
+            scrollspeed: 85,
             mousescrollstep: 56,
             cursorwidth: 6,
             cursorborder: 0,

@@ -11,7 +11,7 @@
                         <a class="user-pic" id="collapse-dropdown" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/user-pic.jpg" /></a>
                         <ul class="dropdown-menu dropdown-menu-right user-item" aria-labelledby="collapse-dropdown">
                             <li><a href="#">个人中心</a></li>
-                            <li><a href="#">标签</a></li>
+                            <li><a href="#">资料设置</a></li>
                             <li><a href="#">用户</a></li>
                             <li><a href="#">建议</a></li>
                         </ul>
@@ -27,9 +27,9 @@
                 </form>
                 <nav class="navbar-content hidden-xs">
                     <ul class="navbar-list clearfix">
-                        <li><a href="#">问答</a></li>
-                        <li><a href="#">标签</a></li>
-                        <li><a href="#">用户</a></li>
+                        <li><a href="index.html">问答</a></li>
+                        <li><a href="tags.html">标签</a></li>
+                        <li><a href="users.html">用户</a></li>
                         <li><a href="#">建议</a></li>
                         <li class="ask-question"><a href="#">撰写问题</a></li>
                     </ul>
@@ -39,9 +39,9 @@
         <nav class="dropdown stack-collapse visible-xs">
             <a class="nav-hamburger glyphicon glyphicon-align-justify" id="collapse-dropdown" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
             <ul class="dropdown-menu stack-collapse-list" aria-labelledby="collapse-dropdown">
-                <li><a href="#">问答</a></li>
-                <li><a href="#">标签</a></li>
-                <li><a href="#">用户</a></li>
+                <li><a href="index.html">问答</a></li>
+                <li><a href="tags.html">标签</a></li>
+                <li><a href="users.html">用户</a></li>
                 <li><a href="#">建议</a></li>
             </ul>
         </nav>
@@ -59,9 +59,9 @@
                 </form>
                 <nav class="navbar-content hidden-xs">
                     <ul class="navbar-list clearfix">
-                        <li><a href="#">问答</a></li>
-                        <li><a href="#">标签</a></li>
-                        <li><a href="#">用户</a></li>
+                        <li><a href="index.html">问答</a></li>
+                        <li><a href="tags.html">标签</a></li>
+                        <li><a href="users.html">用户</a></li>
                         <li><a href="#">建议</a></li>
                         <li class="ask-question"><a href="#">撰写问题</a></li>
                     </ul>
@@ -83,8 +83,7 @@
     <script>
         $(document).scroll(function(){
             if($(this).width()>991){
-                if($(this).scrollTop() >$('.navbar-top').outerHeight()){
-                    $('.navbar-static').fadeOut(500);
+                if($(this).scrollTop() > $('.navbar-static').outerHeight()){
                     $('.navbar-fixed').slideDown(500);
                 }
                 if($(this).scrollTop() <= $('.navbar-bottom').outerHeight()) {
