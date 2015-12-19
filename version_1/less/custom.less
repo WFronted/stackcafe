@@ -1,0 +1,71 @@
+@import "bundle";
+@navbarHeight:44px;
+body{
+  font-family:"AlrightSans","Helvetica Neue","Helvetica","Arial","Source Han Sans SC","Hiragino Sans GB","Microsoft YaHei","Microsoft JhengHei",sans-serif;
+}
+/*Style of global navbar*/
+.global-navbar{
+  position: relative;
+  width:100%;
+  height:@navbarHeight;
+  line-height: @navbarHeight;
+  background-color: #1e82ff;
+}
+.nav-con{
+  padding:0;
+  margin:0;
+  li {
+    list-style-type: none;
+    float: left;
+    height: @navbarHeight;
+    overflow: hidden;
+    margin: 0 1px;
+    font-size: 16px;
+    &:not(:last-child) {
+      a {
+        display: block;
+        padding: 0 20px;
+        height: @navbarHeight + 4;
+        color: #fff;
+        border-bottom: 4px solid #16a085;
+        .transition;
+        &:focus, &:hover, &.active {
+          height: @navbarHeight;
+          color: #16a085;
+          text-decoration: none;
+        }
+      }
+    }
+    &.dropdown {
+      overflow: visible !important;
+      a{
+        display: block;
+        padding: 0 20px;
+        height: @navbarHeight;
+        color: #fff;
+        .transition;
+        &:focus, &:hover, &.active {
+          color: #16a085;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+.logo{
+  height:@navbarHeight;
+  margin:0;
+  width:100%;
+  text-align: center;
+  a{
+    display: block;
+    margin:0 auto;
+    width:100px;
+    height:44px;
+  }
+  img{
+    display:inline-block;
+    height:30px;
+    width:auto;
+  }
+}

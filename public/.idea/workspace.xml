@@ -26,43 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="nav.less" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nav.less" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/less/nav.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-82.63333">
+            <state vertical-scroll-proportion="2.160584">
               <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search-tags.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search-tags.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1666666">
-              <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="80" selection-end-column="30" />
-              <folding>
-                <element signature="n#article#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reputation.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/reputation.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.7666667">
-              <caret line="18" column="26" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-center-questions.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-center-questions.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9357664">
-              <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -71,8 +39,8 @@
       <file leaf-file-name="cafe.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/less/cafe.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.1044776">
-              <caret line="1706" column="21" selection-start-line="1706" selection-start-column="21" selection-end-line="1706" selection-end-column="21" />
+            <state vertical-scroll-proportion="-8.633333">
+              <caret line="7" column="12" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#19193#19707#0" expanded="false" />
                 <element signature="e#33255#34138#0" expanded="false" />
@@ -149,6 +117,7 @@
         <option value="$PROJECT_DIR$/stack/dist/js/plugins.js" />
         <option value="$PROJECT_DIR$/search-tags.html" />
         <option value="$PROJECT_DIR$/less/cafe.less" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
       </list>
     </option>
   </component>
@@ -199,6 +168,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -241,13 +211,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="base" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
@@ -317,7 +314,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-10" y="7" width="1442" height="876" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24684432" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -360,6 +357,80 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/less/nav.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search-tags.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="80" selection-end-column="30" />
+          <folding>
+            <element signature="n#article#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reputation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-center-questions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/less/cafe.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1706" column="21" selection-start-line="1706" selection-start-column="21" selection-end-line="1706" selection-end-column="21" />
+          <folding>
+            <element signature="e#19193#19707#0" expanded="false" />
+            <element signature="e#33255#34138#0" expanded="false" />
+            <element signature="e#34158#34451#0" expanded="false" />
+            <element signature="e#35655#35847#0" expanded="false" />
+            <element signature="e#35868#36449#0" expanded="false" />
+            <element signature="e#41078#41154#0" expanded="false" />
+            <element signature="e#41169#41335#0" expanded="false" />
+            <element signature="e#41761#41953#0" expanded="false" />
+            <element signature="e#41969#42495#0" expanded="false" />
+            <element signature="e#42514#42562#0" expanded="false" />
+            <element signature="e#42580#42838#0" expanded="false" />
+            <element signature="e#42856#43807#0" expanded="false" />
+            <element signature="e#43822#43997#0" expanded="false" />
+            <element signature="e#44014#44182#0" expanded="false" />
+            <element signature="e#44199#44312#0" expanded="false" />
+            <element signature="e#44322#44457#0" expanded="false" />
+            <element signature="e#44477#44869#0" expanded="false" />
+            <element signature="e#44879#45109#0" expanded="false" />
+            <element signature="e#45120#45143#0" expanded="false" />
+            <element signature="e#45156#45198#0" expanded="false" />
+            <element signature="e#45217#45276#0" expanded="false" />
+            <element signature="e#45297#45328#0" expanded="false" />
+            <element signature="e#45347#45378#0" expanded="false" />
+            <element signature="e#45392#45423#0" expanded="false" />
+            <element signature="e#45440#45471#0" expanded="false" />
+            <element signature="e#45490#45521#0" expanded="false" />
+            <element signature="e#45535#45566#0" expanded="false" />
+            <element signature="e#45582#45613#0" expanded="false" />
+            <element signature="e#45630#45661#0" expanded="false" />
+            <element signature="e#45676#45707#0" expanded="false" />
+            <element signature="e#45721#45752#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/less/nav.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -672,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-center-answers.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25975975">
-          <caret line="106" column="38" selection-start-line="77" selection-start-column="32" selection-end-line="106" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/questions.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-20.0">
@@ -742,13 +806,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6036036">
-          <caret line="41" column="7" selection-start-line="31" selection-start-column="3" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/less/responsive-reset.less">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -770,23 +827,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/less/nav.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-82.63333">
-          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search-question.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.16642335">
           <caret line="30" column="18" selection-start-line="18" selection-start-column="12" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#0;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -794,18 +838,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.033334">
           <caret line="28" column="18" selection-start-line="18" selection-start-column="12" selection-end-line="28" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#article#0;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reputation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-center-questions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.366667">
+          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/entypo-master/font/entypo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3240876">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.1666665">
+          <caret line="263" column="38" selection-start-line="263" selection-start-column="38" selection-end-line="263" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/nav.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.59416056">
+          <caret line="11" column="10" selection-start-line="1" selection-start-column="4" selection-end-line="11" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-center-answers.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.1620438">
+          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search-tags.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1666666">
-          <caret line="39" column="24" selection-start-line="39" selection-start-column="24" selection-end-line="80" selection-end-column="30" />
+        <state vertical-scroll-proportion="-5.779562">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
             <element signature="n#article#0;n#div#0;n#div#0;n#div#1;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -814,8 +909,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/cafe.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.1044776">
-          <caret line="1706" column="21" selection-start-line="1706" selection-start-column="21" selection-end-line="1706" selection-end-column="21" />
+        <state vertical-scroll-proportion="-8.633333">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
             <element signature="e#19193#19707#0" expanded="false" />
             <element signature="e#33255#34138#0" expanded="false" />
@@ -852,18 +947,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reputation.html">
+    <entry file="file://$PROJECT_DIR$/less/nav.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.7666667">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-center-questions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9357664">
-          <caret line="33" column="55" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
+        <state vertical-scroll-proportion="2.160584">
+          <caret line="67" column="17" selection-start-line="67" selection-start-column="17" selection-end-line="67" selection-end-column="17" />
           <folding />
         </state>
       </provider>
