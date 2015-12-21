@@ -9,7 +9,7 @@
 
 .container{
   @media(min-width:@screen-max-width1199){
-    width:990px;
+    width:1010px;
   }
 }
 .navbar-global {
@@ -138,6 +138,7 @@ section.user-contribution{
 
 
 
+/*
 .navbar-form{
   @media(max-width:@screen-max-width991){
     position: absolute;
@@ -161,6 +162,33 @@ section.user-contribution{
       h1{
         margin-top: 0;
       }
+    }
+  }
+}*/
+.navbar-form{
+  @media(max-width:@screen-max-width991){
+    position: absolute;
+    top:-80px;
+    left:240px;
+  }
+}
+.navbar-global{
+  @media(max-width:@screen-max-width767){
+    height:60px;
+    .navbar-top{
+      height:60px;
+    }
+    .logo{
+      position: absolute;
+      top:8px;
+      left:50%;
+      margin-left: -89px;
+      .logo-img{
+        margin:0;
+      }
+    }
+    .login{
+      margin:14px 0;
     }
   }
 }

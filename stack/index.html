@@ -9,7 +9,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/reset-response.css">
     </head>
@@ -23,7 +23,75 @@
         <!----------------- Top Panel End------------------------>
 
         <!---------------- Global navBar Start----------------------->
-        <section id="js-navbar"></section>
+        <section>
+            <div class="navbar-global">
+                <nav class="dropdown stack-collapse visible-xs">
+                    <a class="nav-hamburger icon-menu" id="collapse-dropdown" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                    <ul class="dropdown-menu stack-collapse-list" aria-labelledby="collapse-dropdown">
+                        <li><a href="index.html">问答</a></li>
+                        <li><a href="tags.html">标签</a></li>
+                        <li><a href="users.html">用户</a></li>
+                        <li><a href="#">建议</a></li>
+                    </ul>
+                </nav>
+                <div class="container navbar-top clearfix">
+                    <div class="logo clearfix">
+                        <h1 class="logo-img pull-left"><a href="#">stackcafe</a></h1>
+                        <h2 class="logo-text pull-left hidden-xs hidden-sm">专注于开发者的社区问答平台</h2>
+                    </div>
+                    <div class="login">
+                        <!--<p class="login-bt"><a href="javascript:;" id="login">登录</a> | <a class="js-signUpBt" href="javascript:;">注册</a></p>-->
+                        <div class="login-success">
+                            <a class="message icon-bell" href="#"></a>
+                            <div class="dropdown user-set">
+                                <a class="user-pic" id="user-dropdown" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="img/user-pic.jpg" /></a>
+                                <ul class="dropdown-menu dropdown-menu-right user-item" aria-labelledby="user-dropdown">
+                                    <li><a href="#">个人中心</a></li>
+                                    <li><a href="#">资料设置</a></li>
+                                    <li><a href="#">用户</a></li>
+                                    <li><a href="#">登出</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar-fixed hidden-xs">
+                    <div class="container navbar-bottom clearfix">
+                        <h1 class="logo-small"><a href="#"><img src="img/logo.png" /></a></h1>
+                        <form class="navbar-form" role="search" >
+                            <lable class="navbar-form-lable">
+                                <input type="text" class="search-input" placeholder="搜索 Stackcafe">
+                                <button type="submit" class="search-button icon-search"></button>
+                            </lable>
+                        </form>
+                        <nav class="navbar-list">
+                            <ul class="navbar-item clearfix">
+                                <li><a href="#">问答</a></li>
+                                <li><a href="#">标签</a></li>
+                                <li><a href="#">用户</a></li>
+                                <li class="dropdown">
+                                    <a class="icon-dot-3" id="navbar-more" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbar-more">
+                                        <li><a href="#">建议</a></li>
+                                    </ul>
+                                </li>
+                                <li class="ask-question"><a href="#"><span class="icon-feather"></span>发问</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="form-xs visible-xs">
+                <form class="navbar-form" role="search" >
+                    <lable class="navbar-form-lable">
+                        <input type="text" class="search-input" placeholder="搜索 Stackcafe">
+                        <button type="submit" class="search-button icon-search"></button>
+                    </lable>
+                </form>
+                <a class="ask-q-bt icon-feather" href="#"></a>
+            </div>
+        </section>
         <!----------------- Global navBar End------------------------>
 
         <!---------------- Index Body Content Start----------------------->
@@ -42,66 +110,96 @@
                             <article class="list-con">
                                 <div class="list-item clearfix">
                                     <p class="answer-counts plus pull-left"><b>101</b><span>回答</span></p>
-                                    <p class="vote-view-counts pull-right">
-                                        <span class="positive"><b>+20</b><i>投票</i></span>
-                                        <span class="positive"><b>2000</b><i>浏览</i></span>
-                                    </p>
                                     <div class="list-item-main">
-                                        <h2><a href="#" title="question title">phpcms V9 下载模型，内容页生成静态以后阅读点数和元判断失效</a></h2>
-                                        <p class="user-info">
-                                            <img src="img/user-pic.jpg" />
-                                            <span><a href="#" title="user name">wfronted</a><em class="user-badge badge-administrator">Administrator</em></span>
-                                            <strong>提问于<b>5小时前</b></strong>
-                                        </p>
-                                        <p class="tags-name">
-                                            <a href="#" title="tags name">javascript</a>
-                                            <a href="#" title="tags name">php</a>
-                                            <a href="#" title="tags name">html</a>
-                                        </p>
+                                        <div class="user-info clearfix">
+                                            <p class="left-info">
+                                                <a href="#" title="user name">wfronted</a>
+                                                <em class="user-badge badge-administrator">Administrator</em>
+                                                <span>提问于<b>5小时前</b></span>
+                                            </p>
+                                            <a href="#" class="user-pic"><img src="img/user-pic.jpg" /></a>
+                                        </div>
+                                        <h2 class="question-summary">
+                                            <a href="#" title="question title">phpcms V9 下载模型，内容页生成静态以后容页生成静态以后容页生成静态以后阅读点数和元判断失效</a>
+                                            <span class="tags-name">
+                                                <a href="#" title="tags name">php</a>
+                                                <a href="#" title="tags name">javascript</a>
+                                                <a href="#" title="tags name">html</a>
+                                            </span>
+                                        </h2>
                                     </div>
-
+                                    <div class="other-counts clearfix">
+                                        <p class="votes"><a class="icon-up-bold" href="javascript:;"></a><b class="positive">+3</b></p>
+                                        <p class="view"><span class="icon-retweet"></span><b>0</b></p>
+                                        <div class="dropdown">
+                                            <a class="icon-dot-3" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">举报</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-item clearfix">
                                     <p class="answer-counts pull-left"><b>0</b><span>回答</span></p>
-                                    <p class="vote-view-counts pull-right">
-                                        <span class="negative"><b>-2</b><i>投票</i></span>
-                                        <span><b>0</b><i>浏览</i></span>
-                                    </p>
                                     <div class="list-item-main">
-                                        <h2><a href="#" title="question title">phpcms V9 下载模型，内容页生成静态以后阅读点数和元判断失效</a></h2>
-                                        <p class="user-info">
-                                            <img src="img/user-pic.jpg" />
-                                            <span><a href="#" title="user name">wfronted</a><em class="user-badge badge-professor">Professor</em></span>
-                                            <strong>提问于<b>5小时前</b></strong>
-                                        </p>
-                                        <p class="tags-name">
-                                            <a href="#" title="tags name">javascript</a>
-                                            <a href="#" title="tags name">php</a>
-                                            <a href="#" title="tags name">html</a>
-                                        </p>
+                                        <div class="user-info clearfix">
+                                            <p class="left-info">
+                                                <a href="#" title="user name">wfronted</a>
+                                                <em class="user-badge badge-administrator">Administrator</em>
+                                                <span>提问于<b>5小时前</b></span>
+                                            </p>
+                                            <a href="#" class="user-pic"><img src="img/user-pic.jpg" /></a>
+                                        </div>
+                                        <h2 class="question-summary">
+                                            <a href="#" title="question title">模型，内容页生成页生成静态以后阅读点数和元判断失效</a>
+                                            <span class="tags-name">
+                                                <a href="#" title="tags name">php</a>
+                                                <a href="#" title="tags name">html</a>
+                                                <a href="#" title="tags name">laravel</a>
+                                            </span>
+                                        </h2>
                                     </div>
-
+                                    <div class="other-counts clearfix">
+                                        <p class="votes"><a class="icon-up-bold" href="javascript:;"></a><b class="positive">+8</b></p>
+                                        <p class="view"><span class="icon-retweet"></span><b class="positive">5</b></p>
+                                        <div class="dropdown">
+                                            <a class="icon-dot-3" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">举报</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="list-item clearfix">
-                                    <p class="answer-counts plus pull-left"><b>12</b><span>回答</span></p>
-                                    <p class="vote-view-counts pull-right">
-                                        <span class="positive"><b>+20</b><i>投票</i></span>
-                                        <span class="positive"><b>20</b><i>浏览</i></span>
-                                    </p>
+                                    <p class="answer-counts plus pull-left"><b>101</b><span>回答</span></p>
                                     <div class="list-item-main">
-                                        <h2><a href="#" title="question title">phpcms V9 下载模型，内容页生成静态以后阅读点数和元判断失效</a></h2>
-                                        <p class="user-info">
-                                            <img src="img/user-pic.jpg" />
-                                            <span><a href="#" title="user name">wfronted</a><em class="user-badge badge-administrator">Administrator</em></span>
-                                            <strong>提问于<b>5小时前</b></strong>
-                                        </p>
-                                        <p class="tags-name">
-                                            <a href="#" title="tags name">javascript</a>
-                                            <a href="#" title="tags name">php</a>
-                                            <a href="#" title="tags name">html</a>
-                                        </p>
+                                        <div class="user-info clearfix">
+                                            <p class="left-info">
+                                                <a href="#" title="user name">wfronted</a>
+                                                <em class="user-badge badge-administrator">Administrator</em>
+                                                <span>提问于<b>5小时前</b></span>
+                                            </p>
+                                            <a href="#" class="user-pic"><img src="img/user-pic.jpg" /></a>
+                                        </div>
+                                        <h2 class="question-summary">
+                                            <a href="#" title="question title">下载模型，内容页生生成静态以数和元判断失效</a>
+                                            <span class="tags-name">
+                                                <a href="#" title="tags name">php</a>
+                                                <a href="#" title="tags name">javascript</a>
+                                                <a href="#" title="tags name">html</a>
+                                            </span>
+                                        </h2>
                                     </div>
-
+                                    <div class="other-counts clearfix">
+                                        <p class="votes"><a class="icon-up-bold" href="javascript:;"></a><b>0</b></p>
+                                        <p class="view"><span class="icon-retweet"></span><b>0</b></p>
+                                        <div class="dropdown">
+                                            <a class="icon-dot-3" data-target="#" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">举报</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         </div>
@@ -110,30 +208,20 @@
 
                     <!-------Index Body Content → Right Bar Content Start------>
                     <article class="col-md-3 col-xs-12 con-main">
-                        <div class="right-bar">
-                            <div class="ask-question-bt">
-                                <a href="#"><span class="glyphicon glyphicon-plus"></span>问个问题</a>
-                            </div>
-                        </div>
-                        <div class="right-bar">
+                        <div class="right-bar right-bar-user">
                             <div class="widget-user">
-                                <ul class="user-f">
-                                    <li class="clearfix">
-                                        <img class="user-f-t" src="img/user-pic.jpg" />
-                                        <p class="user-f-n clearfix">
-                                            <a href="#">WFronted</a>
-                                            <span class="user-f-g user-badge badge-professor">Professor</span>
-                                            <span class="user-f-r"><b>275</b>REPUTATION</span>
-                                        </p>
-                                    </li>
-                                    <li class="user-f-i clearfix">
-                                        <p><b>234</b><span>问题</span></p>
-                                        <p><b>234</b><span>回答</span></p>
-                                        <p><b>234</b><span>被关注</span></p>
-                                    </li>
-                                    <li class="user-f-b ask-question-bt">
-                                        <a href="#"><span class="glyphicon glyphicon-plus"></span>问个问题</a>
-                                    </li>
+                                <p class="user-bg"></p>
+                                <div class="user-name">
+                                    <a href="#"><img src="img/user-pic.jpg" /></a>
+                                    <p class="user-name-i">
+                                        <a href="#">我是一棵草</a>
+                                        <span><b>255</b>REPUTATION</span>
+                                    </p>
+                                </div>
+                                <ul class="user-states clearfix">
+                                    <li>问题<span>200</span></li>
+                                    <li>回答<span>20</span></li>
+                                    <li>关注的人<span>20</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -142,11 +230,11 @@
                                 <form class="login-form">
                                     <p class="login-input">
                                         <input class="required-item" type="text" value="hello@stackcafe.com" onfocus="if (this.value == 'hello@stackcafe.com') {this.value = '';}" onblur="if (this.value == '') {this.value = 'hello@stackcafe.com';}" name="log" />
-                                        <i class="glyphicon glyphicon-user"></i>
+                                        <i class="icon-user"></i>
                                     </p>
                                     <p class="login-input">
                                         <input class="required-item" type="password" value="password" onfocus="if (this.value == 'password') {this.value = '';}" onblur="if (this.value == '') {this.value = 'password';}" name="log" />
-                                        <i class="glyphicon glyphicon-lock"></i>
+                                        <i class="icon-lock"></i>
                                         <a href="javascript;" class="js-lostPasswordBt">忘记</a>
                                     </p>
                                     <p class="login-submit">
@@ -237,5 +325,19 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+    <script>
+        $(document).scroll(function(){
+            if($(this).width()>991){
+                if($(this).scrollTop() > $('.navbar-top').outerHeight()){
+                    $('.navbar-fixed').css({"position":"fixed","top":0,"left":0});
+                    $('.logo-small').fadeIn(300);
+                }
+                if($(this).scrollTop() <= $('.navbar-top').outerHeight()) {
+                    $('.navbar-fixed').css({"position":"static"});
+                    $('.logo-small').hide();
+                }
+            }
+        })
+    </script>
     </body>
 </html>
